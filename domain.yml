@@ -1,0 +1,128 @@
+version: '3.1'
+intents:
+- account_balance
+- affirm
+- ask_how
+- ask_what
+- bot_challenge
+- deny
+- give_card_id
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- payment
+- register
+- user_introduce
+- choose_context
+- first_word
+entities:
+- operation
+- product
+- context
+- property
+- service
+- currency_1
+- currency_2
+- user_name
+- card_id
+- country
+- type
+slots:
+  user_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: user_name
+  context:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: context
+  card_id:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: card_id
+  service:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: service
+  product:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: product
+  property:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: property
+  operation:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: operation
+  type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: type
+responses:
+  utter_first_word:
+    - text: Hi I am Banking Service Chatbot. I was developed for answering your question. What can i help you ?
+  utter_greet:
+  - text: Hey! How are you?
+  utter_get_card_id:
+  - text: What is your card id?
+  utter_show_balance:
+  - text: Your balance is 1000$
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_card_id:
+  - text: Ask about card id.
+  utter_balance:
+  - text: User balance
+  utter_bill_info:
+  - text: Ask about bill
+  utter_ask_name:
+  - text: What's your name
+  utter_ask_something:
+  - text: What can i help you ?
+  utter_dont_know:
+  - text: I dont know what you mean. Please ask me again
+actions:
+- action_answer_how_product
+- action_answer_how_product_operation
+- action_answer_how_service
+- action_answer_how_service_operation
+- action_answer_what_product
+- action_answer_what_product_property
+- action_answer_what_service
+- action_answer_what_service_product_property
+- action_answer_what_service_property
+- action_greet_with_name
+- action_show_balance
+- utter_greet
+- action_context
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

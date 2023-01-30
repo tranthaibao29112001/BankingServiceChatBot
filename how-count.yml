@@ -1,0 +1,100 @@
+version: '3.0'
+nlu:
+      - How do I [track](operation) my [card](product)?
+      - Why won't my card [show up](operation) on the [app](product)?
+      - How do I [add](operation) the [show up](operation) to my account?
+      - how do I [link](operation) a [show up](operation) I already have?
+      - How do I [link](operation) my replacement [show up](operation)?
+      - How do I [find](operation) the [exchange rates](service)?
+      - How are [exchange rates](service) [calculated](operation)?
+      - How do your [exchange rates](service) [work](operation)?
+      - How are you [determine](operation) your [exchange rates](service)?
+      - How do I use [auto top-up](service)?
+      - How can I top up [automatically](service)?
+      - How do I enable [auto top-up](service)?
+      - How do I [unblock](operation) my [card](product) using the app?
+      - How do I [exchange](operation) [GBP](currency_1) to [AUD](currency_2)?
+      - How are [currencies](product) [exchange](operation)?
+      - How do I [exchange](operation) my [GBP](currency_1) to [AUD](currency_1)?
+      - How do I [exchange](operation) [currencies](product)?
+      - How do I report my [card](product) [stolen](operation)?
+      - How do I deal with a stolen [card](product)?
+      - How can I [deactivate](operation) a stolen [card](product)?
+      - How do I report my [card](product) lost or [stolen](operation)?
+      - How do I report a stolen [card](product)?
+      - How do I get my [PIN](product) [unlock](operation)?
+      - How do I [reset](operation) my [PIN](product)?
+      - How do I [unblocked](operation) my [PIN](product)?
+      - How can I [unlock](operation) the [PIN](product)?
+      - How do I use [contactless](service) payments?
+      - How do I use [contactless](service) pay?
+      - How do I enable [contactless](service) pay?
+      - How can I [cancel](operation) a [transfer](service)?
+      - How do I [cancel](operation) my [transfer](service)?
+      - How do i [cancel](operation) my [transaction](service)?
+      - I show another charge on my card from when I used it, why?
+      - I made a card payment and a fee is showing up?
+      - How do I avoid getting charged a fee on my card?
+      - How do I transfer funds from my American Express into my account?
+      - How can I use American Express to add money to my account?
+      - How can I use American Express to add funds to my account?
+      - How do you [get](operation) a [virtual card](product)?
+      - Can you tell me how to [order](operation) a [virtual card](product)?
+      - how do i [get](operation) a [virtual card](product)?
+      - How can I [order](operation) [virtual card](product)?
+      - How do I [order](operation) a [virtual card](product)?
+      - How do I [update](operation) my [details](product)?
+      - How do I [change](operation) my [information](product)?
+      - how do i [change](operation) [name](product)?
+      - How can I [edit](operation) my personal [details](product)?
+      - How do I [set up](operation) my [PIN](product) for the new card?
+      - How do I [find](operation) my card [PIN](product)?
+      - How can I [top up](service) my account with a [card](product)?
+      - How can I [top up](service) by [card](product)?
+      - how can i [top up](service)?
+      - How can I [stop fraud](operation) on my [account](product) right now?
+      - How do I [freeze](operation) my [card](product) using the app?
+      - How do I [freeze](operation) my [account](product)?
+      - How do I [reset](operation) my [passcode](product)?
+      - How do I [reset](operation) a forgotten [passcode](product), please?
+      - I need to [reset](operation) my [passcode](product). How do I do it?
+      - How do I [reset](operation) the [passcode](product)?
+      - My phone is not on me.  How can I use the app?
+      - How do I use the app if I don't have my phone with me?
+      - How do I apply for a [refund](service)?
+      - How do I get [refund](service)?
+      - How do I claim a [refund](service)?
+      - What would make a [declined](operation) message show up during a [transfer](service)?
+      - How do I contact customer support about a [transfer](service)?
+      - How do I [delete](operation) my [account](product)?
+      - Can you tell me how to [close](operation) my [account](product)?
+      - How do I retrieve my card from the machine?
+      - How can I get my card back out?
+      - How do I retrieve a trapped card from a ATM?
+      - I got double charged for a payment so how do I fix that?
+      - Why is there a transaction that shows multiple times?
+      - Can you explain why there is a payment showing twice?
+      - How might  I [change](operation) my [PIN](product)?
+      - How do I [set](operation) a new [PIN](product)?
+      - How do I [change](operation) my [PIN](product)?
+      - How to [change](operation) the [PIN](product) on my card?
+      - How do I [top up](service) my card?
+      - How do I [transfer](service) money to my account?
+      - How does a [transfer](service) work?
+      - How can I [transfer](service) money to my account?
+      - How do I get my [top-up](service) [verification](operation) code?
+      - How is the [top-up](service) card [verified](operation)?
+      - How do I [verified](operation) a [top-up](service)?
+      - Please, how do I [order](operation) a [card](product)?
+      - How do I [get](operation) a physical [card](product)?
+      - How do I [get](operation) an actual [card](product)?
+      - How do the [disposable virtual card](product) [work](operation)?
+      - How do I [use](operation) a [disposable virtual card](product)?
+      - How would you [use](operation) a [disposable virtual card](product)?
+      - How do [disposable virtual card](product) [work](operation)?
+      - how to [activate](operation) [card](product)?
+      - How do I [activate](operation) a new [card](product)?
+      - I got my new [card](product). How do I [activate](operation) it?
+      - How can I [verify](operation) my [identity](service)?
+      - How do you [verify](operation) an [identity](service)?
+      - How does my [identity](service) get [verify](operation)?

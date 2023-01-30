@@ -1,0 +1,10 @@
+[
+  {
+    "text": "How do I find out what countries you service and what countries you do not?",
+    "intent": "how_country_support",
+    "intent_prediction": {
+      "name": "what_country_support",
+      "confidence": 0.4974597990512848
+    }
+  }
+]

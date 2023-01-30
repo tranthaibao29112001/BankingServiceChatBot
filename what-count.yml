@@ -1,0 +1,75 @@
+version: '3.0'
+nlu:
+      - What [exchange rate](service) do you offer?
+      - What are your international [exchange rate](service)?
+      - What are the most current [exchange rate](service)?
+      - What is the [exchange rate](service) like on this app?
+      - I do not remember purchasing anything for 1�, and it is on my [statement](product). Can you please tell me what that is about?
+      - What would be the reason there's an [extra](property) fee on my [statement](product)?
+      - I am seeing an [extra](property) fee on my [statement](product) what is that for?
+      - What fiat [currencies](product) are used for holding transactions?
+      - What fiat [currencies](product) are supported for holding and exchange?
+      - When considering currency holdings and exchanges, what fiat [currencies](product) are supported?
+      - Whats the [delivery](service) [time](property) to the United States?
+      - What's the U.S. [delivery](service) [time](property)?
+      - What's the [limit](property) on [auto top-up](service)?
+      - What is the [auto top-up](service) function and where can I find that at?
+      - What is the highest [limit](property) for [auto top-up](service)?
+      - What is the [minimum age](property) in order to [have an account](service)?
+      - What age do I have to be?
+      - What is the [minimum age](property) to [open an account](service)?
+      - What is the [minimum age](property)?
+      - What are the [fee](property) for [top-up](service)?
+      - What is the [limit](property) to [top-up](service)?
+      - What are the [restrictions](property) to [top-up](service)?
+      - What is the [limit](property) to a [top-up](service)?
+      - What is the [fee](property) charged with this [card](product) payment?
+      - What is the [fee](property) on my [card](product) payment?
+      - What [fee](property) apply when using a [card](product)?
+      - To add money to my account, what [currencies](product) can I use?
+      - What are the cards and [currencies](product) that are supported?
+      - What [cards](product) and currencies do you support?
+      - What [places](context) can I sue my [card](product)?
+      - What are the rules to [where](context) I can use my [card](product)?
+      - What [places](context) can I use my [card](product)?
+      - What [places](context) will accept my [card](product) for payment?
+      - what is the [disposable cards](product) [limit](property)?
+      - What is the [amount](property) of [disposable cards](product) I can have each day?
+      - What is the [limit](property) to [disposable cards](product) you can have?
+      - What [ATMs](product) is the card okay to [use](property) at?
+      - At what [ATMs](product) am I able to [use](property) the card?
+      - What [ATMs](product) can I [withdraw](property) money from?
+      - What are the [ATMs](product) that will [accept](property) this card?
+      - What [ATMs](product) will [accept](property) this type of card?
+      - What do I need to do to get a [refund](service)?
+      - What's the [refund](service) process?
+      - What is the cause that the [transfer](service) shows as [pending](service)?
+      - What is the number of [time](property) I have to wait for my [Europe](country) [transfer](service)?
+      - What is the wait [time](property) for a [transfer](service) from the [US](country)?
+      - What is the fastest [time](property) that I can make a [transfer](service)?
+      - What is the [time](property)  for a [transfer](service) from the [US](country)?
+      - What is the [transferring](service) [fees](property) charge?
+      - What extra [charge](property) are there?
+      - What are the benefits to [verifying](property) the [top up](service)?
+      - What is the [verification](property) code on a [top up](service)?
+      - What is the necessity of [verifying](property) the [top up](service)?
+      - What is a [disposable cards](product)?
+      - What does a [disposable cards](product)do?
+      - What are [disposable cards](product)?
+      - What are your currency [exchange](service) [fees](property)?
+      - What is the [exchange](service) [fees](property)?
+      - What is the cost for an [exchange](service) [fees](property)?
+      - What are the [top-up](service) [fee](property)?
+      - What [fee](property) is included if I [top-up](service) by card?
+      - What are the [fee](property) for [top-up](service)?
+      - What are the [top-up](service) [fee](property) for US cards?
+      - What is this [fee](property) on my account for a cash [withdrawl](service)?
+      - What is the reason for this [fee](property) I got after a simple cash [withdrawl](service)?
+      - When my card expires what happens to my account?
+      - What do I do when my card expires?
+      - My card's expiring, what happens now?
+      - My card is about to expire. What do I need to do?
+      - What [countries](service) are supported?
+      - From what [countries](service) can I use this product?
+      - What [countries](service) do you support?
+      - What [countries](service) are you currently in?

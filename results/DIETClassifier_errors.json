@@ -1,0 +1,445 @@
+[
+  {
+    "text": "What cards and currencies do you support?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "cards",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "property",
+        "start": 33,
+        "end": 40,
+        "confidence_entity": 0.6832257509231567,
+        "value": "support",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What would I be charged in receiving a [SEPA transfer]?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 23,
+        "value": "charged",
+        "entity": "property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "property",
+        "start": 16,
+        "end": 23,
+        "confidence_entity": 0.9987665414810181,
+        "value": "charged",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service",
+        "start": 45,
+        "end": 53,
+        "confidence_entity": 0.9401075839996338,
+        "value": "transfer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is this extra fee on my statement.",
+    "entities": [
+      {
+        "start": 29,
+        "end": 38,
+        "value": "statement",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "property",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.6552983522415161,
+        "value": "fee",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 29,
+        "end": 38,
+        "confidence_entity": 0.9996544122695923,
+        "value": "statement",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I live in Germany. Is that one of the countries you are in? What other countries are you in?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 47,
+        "value": "countries",
+        "entity": "service"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "service",
+        "start": 38,
+        "end": 47,
+        "confidence_entity": 0.994113028049469,
+        "value": "countries",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service",
+        "start": 71,
+        "end": 80,
+        "confidence_entity": 0.9525937438011169,
+        "value": "countries",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What does a disposable cardsdo?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 28,
+        "value": "disposable cards",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the cards and currencies that are supported?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "currencies",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.7608303427696228,
+        "value": "currencies",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "property",
+        "start": 43,
+        "end": 52,
+        "confidence_entity": 0.6668914556503296,
+        "value": "supported",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How does on apply fora refund on an item he ordered? I ordere an item and have not received it yet so i want to cancel it and get a refund",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "refund",
+        "entity": "service"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "service",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9974258542060852,
+        "value": "refund",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service",
+        "start": 132,
+        "end": 138,
+        "confidence_entity": 0.523836612701416,
+        "value": "refund",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have arranged a transfer, but no longer need to send it. How do I stop the transfer?",
+    "entities": [
+      {
+        "start": 68,
+        "end": 72,
+        "value": "stop",
+        "entity": "operation"
+      },
+      {
+        "start": 77,
+        "end": 85,
+        "value": "transfer",
+        "entity": "service"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "service",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.9981521964073181,
+        "value": "transfer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "operation",
+        "start": 68,
+        "end": 72,
+        "confidence_entity": 0.9729750156402588,
+        "value": "stop",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "service",
+        "start": 77,
+        "end": 85,
+        "confidence_entity": 0.9958887696266174,
+        "value": "transfer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I add a new card?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "card",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "operation",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.7844000458717346,
+        "value": "add",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.9998094439506531,
+        "value": "card",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "My wallet was stolen, along with my cards. How do I put a freeze on my cards and order a new one?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 41,
+        "value": "cards",
+        "entity": "product"
+      },
+      {
+        "start": 58,
+        "end": 64,
+        "value": "freeze",
+        "entity": "operation"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.9981325268745422,
+        "value": "cards",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "operation",
+        "start": 58,
+        "end": 64,
+        "confidence_entity": 0.9997585415840149,
+        "value": "freeze",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 71,
+        "end": 76,
+        "confidence_entity": 0.7988904118537903,
+        "value": "cards",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I link a new card in the app?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "link",
+        "entity": "operation"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "value": "app",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "operation",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.998761773109436,
+        "value": "link",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.9810557961463928,
+        "value": "card",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9958570599555969,
+        "value": "app",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I delete an account?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "account",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "operation",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.6479796767234802,
+        "value": "delete",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.99982750415802,
+        "value": "account",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How do I exchange my GBP to AUD?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "exchange",
+        "entity": "operation"
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "value": "GBP",
+        "entity": "currency_1"
+      },
+      {
+        "start": 28,
+        "end": 31,
+        "value": "AUD",
+        "entity": "currency_1"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "operation",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.9994638562202454,
+        "value": "exchange",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_1",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.928834080696106,
+        "value": "GBP",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "currency_2",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.7092345952987671,
+        "value": "AUD",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "My contactless stopped working today no matter where I try to use it. How do I get it to start working again?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 14,
+        "value": "contactless",
+        "entity": "service"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "service",
+        "start": 3,
+        "end": 14,
+        "confidence_entity": 0.9999711513519287,
+        "value": "contactless",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "operation",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.5442917943000793,
+        "value": "stopped",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

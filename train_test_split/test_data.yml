@@ -1,0 +1,276 @@
+version: "3.1"
+nlu:
+- intent: give_card_id
+  examples: |
+    - The card id is [123345](card_id)
+- intent: user_introduce
+  examples: |
+    - Im [Hoang](user_name)
+- intent: account_balance
+  examples: |
+    - account balance
+- intent: payment
+  examples: |
+    - pay the bill on this
+    - recharge my mobile
+- intent: goodbye
+  examples: |
+    - good by
+- intent: register
+  examples: |
+    - i want to sign up
+    - what is the registration process
+- intent: greet
+  examples: |
+    - hi
+    - goodevening
+- intent: ask_what
+  examples: |
+    - What is the [charge](property) for [topping up](service) a card?
+    - I was [transferring](service) some money to a friend, which I thought would be free, but I see there is a [charge](property).  What's up with that?
+    - What [countries](service) can I use my account in?
+    - What do you charge for an [exchange](service) [fee](property)?
+    - What's the [maximum amount](property) I can [top up](service) my card with please?
+    - What is the reason a [transfer](service) shows as [pending](service)?
+    - What does it mean if my cash [withdrawal](service) does not show up properly?
+    - What is the reason for the [identity](service) check
+    - What types of fiduciary [currencies](product) are supported for tenure and exchange?
+    - What kind of [businesses](context) will take my [card](product)?
+    - My card is about to expire. What do I need to do to keep using my card?
+    - What is the [procedure](property) for [topping up](service) with a cheque?
+    - Whats the [limit](property) on my [top up](service)?
+    - What [currencies](product) do you offer?
+    - What is the [fee](property) for a cash [withdrawal](service)?
+    - What happens after my card expires?
+    - What [countries](service) can I use the card in?
+    - What if I don't want to disclose all of my [identity](service) details?
+    - What is the reason for the [extra fee](property) on my [statement](product)?
+    - What is the highest [limit](property) for [auto top-up](service)?
+    - What is the [fee](property) for a foreign currency [exchange](service)?
+    - What happens when my card expires?
+    - What happens if I use my account and my [identity](service) verification hasn't finished?
+    - What's the [fee](property) for [exchange](service) of foreign currencies?
+    - What age do I have to be?
+    - What is this [extra](property) ?1 fee about?
+    - What do I need to do to get a [refund](service)?
+    - What is the [top-up](service) [limit](property) on my cards?
+    - What is the cost and time frame of getting a new card?
+    - What [countries](service) do your accounts send and receive to?
+    - What is your [age limit](property)?
+    - What number of [times](property) can I [top-up](service)?
+    - What age do you have to be to [open an account](service)?
+    - What's the foreign [exchange rate](service) I will receive?
+    - What are [disposable cards](product)?
+    - What [currency](product) can I use to pay for a top up?
+    - What are the [auto top-up](service) policies?
+    - I just did a [transfer](service), but don't see the money in my account. What's up?
+    - What is the [top up](service) code for?
+    - What fee will be [charged](property) for [exchanges](service)?
+    - What is the function of the [disposable cards](product)?
+    - What's the [limit](property) for [auto top-up](service)?
+    - What is this [extra](property) pound charge for?
+    - What fiduciary [currencies](product) are supported for tenure and exchange?
+    - There is an [extra](property) small charge on my card! What do I do?
+    - What is my [top-up](service) limit?
+    - What is the [minimum age](property)?
+    - What [countries](service) do your accounts support?
+    - What are the guidelines for the [disposable cards](product)?
+    - What [fees](property) to you have for [top ups](service)?
+    - What is this [fee](property) showing up in my account for?
+    - What is the [charge](property) to make a [transfer](service)?
+    - What is [limit](property) of [disposable cards](product)  I can make per day?
+    - What's the time frame on EU [transfers](service)? I purchased something a couple of days ago but the seller hasn't received my payment.
+    - What is the [max](property) I can [top up](service)?
+    - What fiat [currencies](product) are supported for holding and exchange?
+    - What is the [time](property) frame for [european](country) [transfers](service)?
+    - What is the [limit](property) on [Auto top](service)?
+    - What [currency](product) is [acceptable](property) for a top up?
+    - What commission do you take for currency [exchage](service)?
+    - What's my [limit for](property) [topping up](service)?
+    - What are my options for topping up, automatic and/or manual?
+    - What currencies does google pay top up accept?
+    - What [card](product) or currency can I use to pay?
+    - What [cards](property) and currencies can I use to top up my account?
+    - Google Pay isn't working. What is wrong?
+    - What was I charged a [fee](property) for [card payment](service)?
+    - What are the rules to [where](context) I can use my [card](product)?
+    - What do I do if my card is about to expire?
+    - What do I do about my expired card?
+    - What are the steps needed to top up with Apple Pay?
+    - What fiat [currencies](product) do you support?
+    - What's the deal with [verifying](property) the [top-up](service)?
+    - What are your [exchange rates](service) calculated from?
+    - Whats the [delivery](service) [time](property) to the United States?
+    - What is this [fee](property) for [card payment](service)?
+    - What [types](property) of [top-up](service) methods do you accept?
+    - What other fiat [currencies](product) can I use?
+    - What is my [identification](service) used for?
+    - What would the [age limit](property) be?
+    - What are the [exchange rates](service)?
+    - What [ATMs](product) can I [use](property) this card?
+    - What kind of [fees](property) will I pay when I [transfer](service)?
+    - What [ATM](product) [accepts](property) Mastercard?
+    - What [cash](product) stations [take](property) this card?
+    - What is the status of my [card](product)'s [delivery](service)?
+    - What are [disposable virtual cards](product)?
+    - At what [places](context) accept my [card](product)?
+    - It seems I've suddenly been charged for my recent ATM cash withdrawal. What's up with that? I though withdrawals are free, you never charged me so far!
+    - I want to top up my account. What [payment methods](product) are supported?
+    - What about an [auto top-up](service), is that a option?
+    - What [currencies](product) are [approved](property) to add money?
+    - What [ATMs](product) [accept](property) my card?
+    - What are the [cards](product) and currencies that you [support](property)?
+    - What [ATM](product) locations are near me?
+    - What are the [limitations](property) on the [disposable cards](product)?
+    - What is the [charge](property) for using a [Top up](service) card in the [US](country)?
+    - What is the [charge](property) for receiving a [SEPA transfer](service)?
+    - What is the [refund](service) policy?
+    - What are the [exchange rates](service) you assign?
+    - A friend was telling me about her [disposable cards](product). What would I have to do to be able to get that feature?
+    - What is the [cost](property) for currency [exchanges](service)?
+    - What can I do with a [disposable virtual card](product)?
+    - What is the [timeframe](property) for a [transfer](service) in [Europe](country)?
+    - What is the [minimum age limit](property)?
+    - What is this [extra fee](property) that I got when I used my [card](product) to pay?
+    - What credit [cards](product) do you carry
+    - What [places](context) can I use my [card](product)?
+    - What types of foreign money can be used with this service.?
+    - What foreign [exchange](service) rate will I get?
+    - What are the details of [disposable card](product) [limitations](property)?
+    - What can I do to [verify](property) my [card](product)?
+- intent: ask_how
+  examples: |
+    - How do I [top up](service) my card?
+    - How do I [replace](operation) a stolen [card](product)?
+    - How can I revert a [transaction](service) from this morning?
+    - How do I [get](operation) [another card](product)?
+    - How can my friends [top up](service) my account?
+    - How do I [report fraud](operation) on my [card](product)?
+    - How to [edit](operation) personal [details](product)?
+    - How do I get [refund](service)?
+    - How can my friend give me money?
+    - How to [receive](operation) the actual [card](product)
+    - How do I [request](operation) the [PIN](product)?
+    - How can I [change](operation) to another [currency](product)?
+    - How do I know what my account is set to, I am paid in GBP?
+    - How can I move money from an account at another bank to this one?
+    - My card is no longer lost. How do I enter it back into the [app](product)?
+    - How do I [get](operation) [extra physical cards](product)?
+    - How does the [exchange rate](service) [work](operation)?
+    - How do I troubleshoot when [contactless](service) doesn't work?
+    - How do I top-up while traveling?
+    - How do I [auto top-up](service)?
+    - How can i get a refund for something i just [refund](service)?
+    - How do I [top up](service) using my [card](product)?
+    - How do I [active](operation) this [card](product)?
+    - How do I use my card if I lost my phone?
+    - How do I find the [top-up](service) [verification](operation) code?
+    - How are [top-ups](service) [verified](operation)?
+    - I show another charge on my card from when I used it, why?
+    - Why won't my card [show up](operation) on the [app](product)?
+    - How can I [exchange](operation) [currencies](product) using your app?
+    - How do I use [contactless](service) payments?
+    - How do I [exchange](operation) [USD](currency_1) to [GBP](currency_2)?
+    - How do I [set up](operation) my [PIN](product) for the new card?
+    - How can I deposit money to my account?
+    - How can I [order](operation) a [card](product)?
+    - How can I stop someone from using my card after I lost it yesterday.
+    - How do I go about getting a [refund](service)?
+    - How can I [create](operation) a [disposable virtual card](product)?
+    - How do I go about [ordering](operation) a [card](product)?
+    - How can I prove I am me?
+    - How do I get a [refund](service) for an item I bought?
+    - How can I [obtain](operation) a [virtual card](product)?
+    - How do I [transfer](service) money from one bank account to another?
+    - Something is wrong with my [top up](service) and I can't see it. How do I find it?
+    - How can I [cancel](operation) my [transfer](service)?
+    - How do I [re-order](operation) a damaged [card](product)?
+    - How can I [cancel](operation) this [transaction](service)?
+    - How do I [get](operation) a new expiration date?
+    - How do I perform [identity](service) [checks](operation)?
+    - How can I [activate](operation) my new [card](product)?
+    - How can I [change](operation) my [information](product)?
+    - I really want a physical [card](product). How do I [get](operation) one?
+    - How do I use a [card](product) to [top up](service)?
+    - How can I [exchange](operation) [USD](currency_1) and [GBP](currency_2) in the app?
+    - How do I [verify](operation) my [identity](service)?
+    - How can I [stop fraud](operation) on my [account](product) right now?
+    - How can I [get](operation) [disposable virtual cards](product)?
+    - How was I charged extra when I used my card to pay?
+    - How do I [change](operation) my [AUD](currency_1) into [GBP](currency_2)?
+    - How do I use a check to [top up](service)?
+    - How can I [sign up](operation) for a [virtual card](product)?
+    - How can I [receive](service) my salary with a different currency?
+    - How can I add physical money to my card?
+    - How do I [link](operation) a new payment [card](product)?
+    - How can I [unblock](operation) my [PIN](product)?
+    - How can I move money from my account at a different bank to the account I have at this bank.
+    - How can i [reset](operation) my [passcode](product) ?
+    - How can I [change](operation) my [PIN](product)?  Help.
+    - How do I [delete](operation) my [account](product) now
+    - How can I [top up](service) by [card](product)?
+    - How can I [change](operation) [currency](product) type?
+    - How can I [verify](operation) the [top-up](service) card?
+    - How do I add my new card to the [app](product)?
+    - How are [exchange rates](service) determined?
+    - How do I claim a [refund](service)?
+    - How do you do [exchanges](service)?
+    - How do I know how much money I will have when I travel abroad?
+    - There is a [direct debit transaction](service) on my statement that I think is not mine. How do I [remove](operation)?
+    - How do I use [contactless](service) pay?
+    - How do I [set](operation) a new [PIN](product)?
+    - How can I make my card [show up](operation) in the [app](product)?
+    - How can I [verify](operation) my [top-up](service) card?
+    - How do I [change](operation) to [AUD](currency_1) from [GBP](currency_2)?
+    - How do I [fix](operation) a [transaction](service) to the wrong account?
+    - How do I [change](operation) my [details](product)?
+    - How do I [exchange](operation) [GBP](currency_1) to [AUD](currency_2)?
+    - How do I [stop fraud](operation) to my [account](product)?
+    - How do I [activate](operation) my new [card](product)
+    - How do I get a [refund](service) for something I bought?
+    - How do your [exchange rates](service) [work](operation)?
+    - How do I [change](operation) the [details](product) in my account?
+    - How can I get my card out of the stupid ATM that ate it?
+    - My phone is at the hotel.  How can I use the app?
+    - How do you [verify](operation) an [identity](service)?
+    - How can I [activate](operation) the new [card](product) i got?
+    - how can i [top up](service)?
+    - How do I [verify](operation) my new [card](product)?
+    - How can I configure what currency my salary is in if it's in GBP?
+    - How do I [report possible fraudulent](operation) activity on my [account](product)?
+    - How do i [change](operation) my [identity](service)?
+    - I would like to have a physical [card](product) to carry around and use. How can I [get](operation) one?
+    - How do I [get](operation) my card [PIN](product)?
+    - How do I [dispute](operation) a [direct debit](service) that I didn't do?
+    - How can I [order](operation) my [card](product)?
+    - How do I [get](operation) a [PIN](product)?
+    - How can I [change](operation) my Rowlock ?
+    - How to receive [transfers](service) from my employer when I get paid in GBP?
+    - How do I [deactivate](operation) a stolen [card](product)?
+    - How do I [replace](operation) my [card](product)?
+    - How are foreign [exchange rates](service) [determined](operation)?
+    - How do I [add](operation) an existing card to the [app](product)?
+    - How simple is it to [transfer](service) money into my account?
+    - How do I [stop fraud](operation) to my [card](product)?
+    - I want to use a payment card to top up my account. How can I do this?
+    - How do I [get](operation) a new [card](product) when my old one expires?
+    - How can I [reset](operation) my darned [PIN](product) number?
+    - How does a [disposable virtual card](product) work?
+    - how do I [link](operation) a [show up](operation) I already have?
+    - How can you [transfer](service) my salary to my correct currency?
+    - How do I get [unblocked](operation)?
+    - How do I [reset](operation) my [passcode](product)?
+    - How do I see what fees I am supposed to be charged on my account? I've noticed fees on some transactions, but not on others. This is very confusing and I cannot find a pattern to what I am being charged?
+    - How do i [set up](operation) [auto top-up](service)?
+    - How do I [link](operation) the new [card](product) that I just got from you guys?
+    - How do I use bank [transfer](service) to top up my account?
+    - Help me. My [transfer](service) was [declined](operation). How could this happen?
+    - How do I [verified](operation) a [top-up](service)?
+    - How do I [unlock](operation) my [account](product) after typing in the wrong PIN too many times?
+    - How can I tell if someone else is using my [card](product)?
+    - How do I [transfer](service) money between two of my accounts?
+    - How can I find your [exchange rates](service)?
+    - How does someone else [top up](service) my account
+    - How can I [update]](operation) my [details](product) since I moved?
+    - How do I [validate](operation) my [identity](service).
+    - How do I know if i [need](operation) a [disposable card](product)?

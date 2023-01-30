@@ -1,0 +1,93 @@
+{
+  "product": {
+    "precision": 0.9965156794425087,
+    "recall": 0.9947826086956522,
+    "f1-score": 0.9956483899042646,
+    "support": 575,
+    "confused_with": {}
+  },
+  "user_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "service": {
+    "precision": 0.9931623931623932,
+    "recall": 1.0,
+    "f1-score": 0.9965694682675815,
+    "support": 581,
+    "confused_with": {}
+  },
+  "card_id": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "currency_2": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "property": {
+    "precision": 0.988929889298893,
+    "recall": 1.0,
+    "f1-score": 0.9944341372912803,
+    "support": 268,
+    "confused_with": {}
+  },
+  "currency_1": {
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1-score": 0.9473684210526316,
+    "support": 10,
+    "confused_with": {
+      "currency_2": 1
+    }
+  },
+  "operation": {
+    "precision": 0.9910714285714286,
+    "recall": 1.0,
+    "f1-score": 0.9955156950672646,
+    "support": 333,
+    "confused_with": {}
+  },
+  "country": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 22,
+    "confused_with": {}
+  },
+  "context": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9928532160527762,
+    "recall": 0.9977900552486187,
+    "f1-score": 0.9953155139156791,
+    "support": 1810
+  },
+  "macro avg": {
+    "precision": 0.9844679390475225,
+    "recall": 0.9894782608695651,
+    "f1-score": 0.9862869444916356,
+    "support": 1810
+  },
+  "weighted avg": {
+    "precision": 0.9929330730128078,
+    "recall": 0.9977900552486187,
+    "f1-score": 0.995318661908143,
+    "support": 1810
+  },
+  "accuracy": 0.9983203863111484
+}

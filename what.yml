@@ -1,0 +1,551 @@
+version: '3.0'
+nlu:
+  - intent: what_card_arrival
+    examples: |
+      - What is the status of my [card](product)'s [delivery](service)?
+      - What is the expected [delivery](service) date for my card?
+      - What's the tracking on the [card](product) you sent?
+      - What's the expected wait time to recieve my new [card](product)?
+      - What is the expected [delivery](service) date of my [card](product)?
+  - intent: what_exchange_rate
+    examples: |
+      - What is my money worth in other countries?
+      - What foreign [exchange rate](service) will I get on weekdays and on the weekends?
+      - What is the [exchange](service) looking like?
+      - What are you [exchange rates](service)?
+      - What's the process for [exchanges](service)?
+      - What do you think of the [exchange rate](service)?
+      - What do you use to figure out the [exchange rate](service) for the [card](product)?
+      - What's the foreign [exchange rate](service) I will receive?
+      - What are the current [exchange rates](service)?
+      - What [exchange rate](service) will I receive?
+      - What is the basis of your [exchange rates](service)?
+      - What is the current [exchange rate](service)?
+      - What is the formula for your [exchange rate](service)?
+      - What method do you use for the [exchange rate](service)?
+      - What are Interbanks current [exchange rates](service)?
+      - What are your [exchange rates](service) calculated from?
+      - What is an [exchange rate](service)?
+      - What are the [exchange rates](service) you assign?
+      - What is the present state of the [exchange rate](service)?
+      - What is the foreign [exchange rate](service) you will apply?
+      - What will my [exchange rate](service) be?
+      - What [exchange rates](service) do you use?
+      - What factors effect the [exchange rate](service)?
+      - What factors determine your [exchange rate](service)?
+      - What are the [exchange rates](service)?
+      - What is the system for determining the [exchange rate](service)?
+      - What [exchange rate](service) is it?
+      - What is the source of your [exchange rates](service)?
+      - What foreign [exchange](service) rate will I get?
+  - intent: what_extra_charge_on_statement
+    examples: |
+      - What is the $1 [transaction](service) on my account?
+      - What is this [extra](property) pound charge for?
+      - What is the reason for the [extra fee](property) on my [statement](product)?
+      - What is the [extra](property) ?1 on my [statement](product) for?
+      - There is an odd 1? charge that appears as pending on my [statement](product). What's the reason for that? I haven't purchased anything for a pound.
+      - There is an [extra](property) small charge on my card! What do I do?
+      - What is the [extra fee](property) on my [statement](product)?
+      - On my [statement](product), there is a strange 1? charge that appears as pending. What's causing that? I haven't purchased anything that's just a pound.
+      - What is this [extra](property) ?1 fee about?
+      - What was the $1 charge for on my [statement](product)?
+      - I was charged [extra](property) or a hidden fee when I purchased something from you. What's the deal? I didn't authorize that charge.
+      - What am I being charged an [extra](property) pound when I haven't bought something worth that much?
+      - I am being charged a pound out of nowhere. What is this?
+      - What is the fee on my [statement](product) for?
+      - What is this $1 charge on my account?
+      - There is a 1? charge that appears as pending on my [statement](product). What is that? I haven't purchased anything for a pound there.
+      - There is some odd 1? charge that appears as pending on my [statement](product). What's that about? Pretty sure I haven't purchased anything for a pound there.
+      - What is the dollar that I have pending on my [statement](product) there?
+      - What is this extra fee on my [statement](product).
+      - What does the ?1 fee mean?
+      - There is a strange 1? charge that appears as pending on my [statement](product). What's the cause for that? I haven't purchased anything for a pound.
+      - There is a charge for 1? on my [statement](product).  I do not think that I bought anything that costed 1?.  What is going on?
+      - What is this random charge of one pound doing on my account?
+      - What is this ?1 charge?
+  - intent: what_pending_cash_withdrawal
+    examples: |
+      - What does it mean if my cash [withdrawal](service) does not show up properly?
+      - I made a cash [withdrawal](service) earlier and it's showing as pending.  What does that mean?
+      - What does [pending](property) mean on a cash [withdrawal](service)?
+      - What does it mean to have a [pending](property) cash [withdrawal](service)?
+      - What is a [pending](property) cash [withdrawal](service)?
+      - What does it mean when a cash [withdrawal](service) is [pending](property)?
+      - What is the reason my cash [withdrawal](service) is still [pending](property)?
+      - What does it mean if my cash [withdrawal](service) is [pending](property)?
+      - What does a [pending](property) cash [withdrawal](service) mean?
+      - What should I do if I see a [withdrawal](service) is [pending](property)?
+  - intent: what_fiat_currency_support
+    examples: |
+      - What [currencies](product) can I have?
+      - What [currencies](product) can my account be in?
+      - What fiat [currencies](product) can I use for holding and exchanging?
+      - What are the fiat [currencies](product) used?
+      - What [currencies](product) can I not hold many in, if so what are they?
+      - What [currencies](product) do you offer?
+      - What other fiat [currencies](product) can I use?
+      - What fiat [currencies](product) do you allow exchange with?
+      - What types of foreign money can be used with this service.?
+      - What fiat [currencies](product) do you support?
+      - What are all the fiat [currencies](product) that are supported for both exchange and holding?
+      - What [currencies](product) can I hold?
+      - What types of fiduciary [currencies](product) are supported for tenure and exchange?
+      - What fiat [currencies](product) are used with holdings and exchanges?
+      - What [currencies](product) do you support?
+      - What [kind of money](product) can I hold?
+      - What flat [currencies](product) do you support for holding and exchange?
+      - What kind of fiat [currencies](product) are supported for holding and exchange?
+      - What [currencies](product) can I exchange?
+      - What fiduciary [currencies](product) are supported for tenure and exchange?
+      - What [currencies](product) are available for my use in holding and exchange?
+      - What type of fiat [currencies](product) do you support?
+      - What [currencies](product) are supported?
+      - What [currency](product) is supported for exchanges and holding?
+      - What fiat money can I used in the exchange and holding?
+      - What fiat [currencies](product) are used for exchange?
+      - What country's money can I hold [currency](product) in?
+      - What other [currencies](product) can I hang onto?
+      - What are eligible holding and exchange [currencies](product)?
+      - What fiat [currencies](product) are used for holdings?
+      - What fiat [currencies](product) are supported?
+      - What are my options for holding money in multiple [currencies](product)?
+      - What flat [currencies](product) do you use for holding and exchanges.
+      - What are the [currency](product) types that I can keep money in.
+  - intent: what_card_delivery_estimate
+    examples: |
+      - What is the [delivery](service) [time](property) to the [US](country)?
+      - What is your shipping policies for cards?
+      - What is the wait [time](property) for [delivery](service) to the [US](country)?
+      - What is the length of [time](property) for one of these items to come to the [U.S](country)?
+      - What is the estimated [date](property) for [delivery](service) to [US](country)?
+      - What is the [delivery](service) [time](property) for [US](country)?
+      - What is [delivery](service) speed to the [United States](country)?
+      - What's the earliest [time](property) to receive my card?
+  - intent: what_automatic_top_up
+    examples: |
+      - What are the [maximum amount](property) you can do for [auto top-up](service)?
+      - What are the [auto-top up](service) policies?
+      - What is the [limit](property) on [Auto top](service)?
+      - What is the [maximum](property) for [auto top-up](service)?
+      - What are my options for topping up, automatic and/or manual?
+      - What's the [limit](property) for [auto top-up](service)?
+      - What is the maximum [times](property) I can [auto top-up](service)?
+      - What are the [auto top-up](service) policies?
+      - What, if any, is the [limit](property)  for [auto top-up](service)?
+      - What are the [restrictions](property) on [auto top-up](service)?
+      - What about a [auto top-up](service)?
+      - What about an [auto top-up](service), is that a option?
+      - What is the [auto top-up](service) [limit](property)?
+  - intent: what_age_limit
+    examples: |
+      - Whats the [minimum age](property) to [have an account](service)
+      - What are [age requirements](property) for [opening an account](service)?
+      - What is [minimum age](property) for an [account](service)?
+      - What is needed for my daughter to open an [account](service)?
+      - What about my children?
+      - What is the process for [setting up an account](service) for my child?
+      - What does my daughter need to [open an account](service)?
+      - What is the [age limit](property) for an [account](service)?
+      - What [age](property) do you have to be?
+      - What is the appropriate [age](property) for my child to be able to [open an account](service)?
+      - What are the [requirements](property) to [open an account](service) for a minor?
+      - What is the [minimum age](property) required to [open an account](service) with your service?
+      - What would the [age limit](property) be?
+      - What are the [age requirements](property) for service?
+      - What is the [minimum age limit](property)?
+      - What is the [age limit](property)?
+      - What is the youngest age for an [account](service)?
+      - What is your [age limit](property)?
+      - What age do you have to be to [open an account](service)?
+      - What are the [age limits](property) for your service?
+      - What is the [age requirement](property)?
+      - What's the youngest I can be to [open an account](service)?
+  - intent: what_top_up_by_bank_transfer_charge
+    examples: |
+      - What are the [charges](property) for receiving a [SEPA transfer](service)?
+      - What is the [fee](property) to [top-up](service) my account
+      - What is the [charge](property) for receiving a [SEPA transfer](service)?
+      - What would I be [charged](property) in receiving a [SEPA transfer](service)?
+      - What are the [fees](property) associated with top up via [transfer](service)?
+      - What is the [charge](property) to make a [transfer](service)?
+      - What are the [fees](property) for using [transfer](service) to top off my account?
+      - What does it [cost](property) to receive a [SEPA transfer](service)?
+      - What does a [transfer](service) [cost](property)?
+      - What should I expect to be charged on a [SEPA transfer](service)?
+      - What is the [cost](property) of a [transfer](service)?
+      - What are the additional charges for a [SWIFT transfer](service)?
+      - What is the handling [fee](property) for [transfer](service)?
+      - What are the [charges](property) for recieving [SEPA transfers](service)?
+      - What kind of [fee](property) is there to [top-up](service) my account?
+  - intent: what_top_up_limits
+    examples: |
+      - What is the [max amount](property) of [top-ups](service)?
+      - What's the [limit](property) to how much I can [top up](service)?
+      - What is the [maximum](property) I can [top up](service)?
+      - What is the greatest number of [times](property) that I can [top-up](service)?
+      - Whats the [limit](property) on my [top up](service)?
+      - What is the [highest amount](property) of [top ups](service) I'm allowed?
+      - What are the [rules](property) for a [top-up](service)?
+      - What is the [highest amount](property) I can [top-up](service)?
+      - What is [the most](property) that I can [top-up](service) to a card?
+      - What [limits](property) are the to [top-ups](service)?
+      - Whats the max I can [top up](service)?
+      - What is the maximum [top up](service)?
+      - What is the [top-up](service) limit for my card?
+      - What number of [times](property) can I [top-up](service)?
+      - What's the [maximum amount](property) I can [top up](service) my card with please?
+      - What is my [top-up](service) limit?
+      - What is the max [top-up](service)?
+      - What is your maximum [top up](service) [limit](property) per day?
+      - What is the [top-up](service) limit?
+      - What is the [maximum](property) for [top-ups](service)?
+      - What amount can I [top-up](service)?
+      - What is the [most](property) I can [top-up](service)?
+      - What is the [max](property) I can [top up](service)?
+      - What's the [amount](property) that I can [top-up](service)?
+      - What is the [top-up](service) [limit](property) on my cards?
+      - What's my [limit for](property) [topping up](service)?
+      - What is the daily [limit](property) on my card?
+      - What's the [top-up](service) [limit](property)?
+  - intent: what_card_payment_fee_charged
+    examples: |
+      - I'm going on holiday to France for 6 weeks with my family and the cat, Fluffy.  I just purchased ?10,000 from a currency exchange to ensure we don't run short but there appears to be a fee.  What is this for?
+      - What are the reasons to be charged a [fee](property) on [card payments](service)?
+      - I noticed a new [fee](property) on my account. I didn't know there were fees for these [payments](service). What is the policy?
+      - What is the [extra fee](property) that showed up on my [card](product)?
+      - Why am I being [charged fees](property) on some [transactions](service) but not on others? What am I missing here? I cannot find where to see the fee structure on my account. Help!
+      - What is this fee for [card payment](service)?
+      - What was I charged a [fee](property) for [card payment](service)?
+      - What is this [extra fee](property)?
+      - What are these [fees](property) i am paying?
+      - What is this [extra fee](property) that I got when I used my [card](product) to pay?
+      - What is the [charge](property) for [paying with my card](service)?
+      - What are the [fees](property) imposed when I make a [transaction](service)?
+      - What was the [extra charge](property) for using my [card](product)?
+      - What is the [fee charged](property) for using my [card](product)?
+      - What is this [fee](property) showing up in my account for?
+      - What is the [extra fee](property) that was added when I used the [card](product)?
+  - intent: what_supported_cards_and_currencies
+    examples: |
+      - What are the [acceptable](property) [currencies](product) for adding funds?
+      - What types of [currencies](product) do you [accept](property)?
+      - What types of [cards](product) and money do you [accept](property)?
+      - What [currencies](product) do you [accept](property) to add money?
+      - What are the [currencies](product) and cards that are [supported](property) with my account?
+      - What [currency](product) can I use to add money?
+      - What [currencies](product) are [approved](property) to add money?
+      - What [currencies](product) can I use?
+      - What [currencies](product) and methods can i use to top up my account?
+      - What kind of [cards](product) are [supported](property)?  What currency?
+      - What [US](country) [cards](product) do you [accept](property)?  I only have 1 other.
+      - What [cards](product) do you [accept](property) to top up my account?
+      - What [currencies](product) do you [accept](property) for adding money?
+      - What [currencies](product) are [accepted](property) to add money?
+      - What are my [payment options](product)?
+      - What are the [cards](product) and currencies that you [support](property)?
+      - What US credit [cards](product) do you [accept](property)?
+      - What [currencies](product) do you [accept](property) for adding money to my account?
+      - What [forms of payment](product) do you [accept](property)?
+      - What [type](property) of [card](product) can I use to top up?
+      - What [currencies](product) and cards do you [support](property)?
+      - What [cards](property) and currencies can I use to top up my account?
+      - What [kinds](property) of [cards](product) can I use to top up?
+      - What cards and [currencies](product) can I use?
+      - What [currency](product) is [acceptable](property) for a top up?
+      - What other credit [cards](product) can I use?
+      - What [payment methods](product) are used to top up?
+      - I want to top up my account. What [payment methods](product) are supported?
+      - What [card](product) or currency can I use to pay?
+      - What [currency](product) can I use to pay for a top up?
+      - What are the various [currencies](product) and cards that you offer [support](property) for?
+      - What [currencies](product) can be used for top up?
+      - What [cards](product) do you [support](property)
+      - What are the [currencies](product) that are [accepted](property) to add money?
+      - What kind of [cards](product) an currency do you [support](property)?
+      - I want to add funds to my account. What [payment methods](product) are [accepted](property)?
+  - intent: what_card_acceptance
+    examples: |   
+      - What [retailers](context) accept my [card](product)?
+      - This [card](product) is accepted by what [businesses](context)?
+      - What kind of [businesses](context) will take my [card](product)?
+      - What are the limits to [where](context) my [card](product) will be accepted?
+      - At what [places](context) accept my [card](product)?
+      - In what [places](context) can I use my [card](product)?
+      - What [places](context) accept my [card](product)?
+      - What [businesses](context) can I use this [card](product) with?
+      - What [businesses](context) accept my [card](product)?
+  - intent: what_verify_identity
+    examples: |
+      - What is the reason for the [identity](service) check
+      - What if I don't verify my [identity](service)?
+      - What's the reason for needing to verify my [identity](service)?
+      - What is the function of the [identity](service) check
+      - What is the purpose of requiring my [identification](service)?
+      - What is the first step I need to make for being able to access my account?
+      - What happens if I use my account and my [identity](service) verification hasn't finished?
+      - What do you need my [identity](service) details for?
+      - What is with the need to have all my [ID information](service)?
+      - What is the purpose for verifying my [identity](service)?
+      - What is my [identification](service) used for?
+      - What if I don't want to disclose all of my [identity](service) details?
+      - What is the [identity](service) check for?
+      - What do you do with all the [identity information](service) you're collecting from me?
+      - What is [identity](service) check?
+  - intent: what_visa_or_mastercard
+    examples: |
+      - What credit [cards](product) do you carry
+      - What [card](product) [types](property) can I choose from?
+      - What [cards](product) do you offer?
+      - What [type](property) of [card](product) will I receive?
+      - What [type](property) of [card](product) can I get?
+  - intent: what_disposable_card_limits
+    examples: |
+      - A friend was telling me about her [disposable cards](product). What would I have to do to be able to get that feature?
+      - What are the guidelines for the [disposable cards](product)?
+      - What are the [restrictions](property) of the [disposable cards](product)?
+      - What is the most [amount](property) of [disposable cards](product) allowable?
+      - What [number of transactions](property) can i do with one [disposable card](product)?
+      - Whats the [maximum](property) [disposable virtual cards](product)?
+      - What are the [disposable cards](product) [restrictions](property)?
+      - What sort of [restrictions](property) are there for the [disposable cards](product)?
+      - What is the [limit](property) on [disposable cards](product)?
+      - What are the [limitations](property) on the [disposable cards](product)?
+      - What are the [policies](property) of [disposable cards](product)?
+      - What is the [number of transactions](property) I get with a [disposable card](product)?
+      - Whats the [maximum](property) number of [disposable cards](product) that I can get?
+      - What are some of the [restrictions](property) that the [disposable cards](product) have?
+      - What are the [restrictions](property) on the [virtual cards](product)?
+      - What is [limit](property) of [disposable cards](product)  I can make per day?
+      - What are the details of [disposable card](product) [limitations](property)?
+      - What is the [maximum transactions](property) I can use on a [disposable card](product)?
+      - What [limits](property) are there on the [virtual cards](product)?
+      - What is the [max amount](property) of [disposable cards](product) I'm allowed.
+      - What stipulations do [disposable cards](product) entail?
+      - What's the [limit](property) for [disposable virtual cards](product)?
+      - What is the [maximum number of transactions](property) that I can put on a [disposable card](product)?
+      - What is the [maximum number of transactions](property) I can do with a [disposable card](product)?
+      - What are the [rules](property) for using [disposable virtual cards](product)?
+      - What are the [disposable virtual card](product) limits?
+      - What is the [maximum transactions](property) for one [disposable card](product)?
+      - What are the [disposable card](product) limits?
+      - What are my [limits](property) on [disposable cards](product)?
+      - What is the [limits](property) on the number of [disposable cards](product) I can have?
+      - What can I and can't do with the [disposable cards](product)?
+      - What is the [number of transactions](property) for one [disposable card](product)?
+  - intent: what_atm_support
+    examples: |
+      - What locations can I get money from?
+      - What [ATMs](product) [take](property) this card?
+      - What locations allow me to withdraw money?
+      - What [ATMs](product) [accept](property) my card?
+      - What kind of [ATMs](product) would this card be [accepted](property) at?
+      - What [ATMs](product) can I [use](property) my card at?
+      - What [ATM](product) machines [allow](property) this card?
+      - What [ATMs](product) can I [use](property) my card?
+      - What [cash](product) stations [take](property) this card?
+      - What is the closest [ATM](product)?
+      - What [ATMs](product) [use](property) this card?
+      - What [ATMs](product) can I [use](property) this card?
+      - What's the closest place to withdraw money?
+      - What [ATMs](product) can I [use](property) this card at?
+      - What [ATM](product) locations are near me?
+      - What [ATM](product) [accepts](property) Mastercard?
+  - intent: what_request_refund
+    examples: |
+      - What's the procedure for canceling a purchase?
+      - What is the [refund](service) policy?
+      - What's your [refund](service) policy if I bought an item from you?
+      - What do I need to do for a [refund](service)?
+      - What is the [refund](service) procedure?
+      - What is your [refund](service) policy for products I have purchased?
+      - What is the [refund](service) process?
+      - What is the [refurd](service) policy?
+  - intent: what_pending_transfer
+    examples: |
+      - What's the time frame on EU [transfers](service)? I purchased something a couple of days ago but the seller hasn't received my payment.
+      - What is the reason a [transfer](service) shows as [pending](service)?
+      - What am I supposed to do if the funds haven't show up from a [transfer](service) completed this morning?
+      - What is going on? I have checked over and over and the details of my account are right. Why is my [transfer](service) still [pending](service)? It's 2018 not 1818. Transfering money to another country can't be that hard.
+      - How long does a [transfer](service) to another country normally take? I check over and over again and see that my transfer is still [pending](service). It's 2018, nothing should take this long. I have confirmed my account information, so there is no error. What is the hold up?
+      - What is the reason why the [transfer](service) shows as [pending](service)?
+      - What is the average [pending](service) time for a [transaction](service)?
+      - I am having to wait for my [transfer](service) to be fully processed. It seems to be taking a very long time in the [pending](service) phase. What is the normal turn around time that I can expect to see it completed?
+      - What does it mean when a [transfer](service) is "[pending](service)"?
+      - My [transfer](service) says [pending](service). What does that mean?
+  - intent: what_transfer_timing
+    examples: |
+      - What [time](property) will a [transfer](service) from the [US](country) take?
+      - What is the [timeframe](property) for a [transfer](service) in [Europe](country)?
+      - What is the estimated [time](property) on an urgent [transfer](service) from [China](country)?
+      - What is the wait [time](property) until money reaches my account?
+      - What's the wait [time](property) for [European](country) [transfers](service)?
+      - What is the [time](property) period for money to be [transferred](service)?
+      - I just did a [transfer](service), but don't see the money in my account. What's up?
+      - What is the longest a [US](country) [transfer](service) should take to appear in my account?
+      - What is the estimated wait [time](property) on a [US](country) [transfer](service) into my account?
+      - What is the [time](property) frame for [european](country) [transfers](service)?
+      - What's the [transfer](service) [time](property) from [Europe](country)?
+      - What are the [time](property) frames for the money to be available in my account?
+      - What is the estimated wait [time](property) for [transfers](service) from the [US](country)?
+      - What is the length of [time](property) for money to reach the account?
+      - What is taking so long on my [transfer](service) from the [US](country)?
+  - intent: what_transfer_fee_charged
+    examples: |
+      - I was [transferring](service) some money to a friend, which I thought would be free, but I see there is a [charge](property).  What's up with that?
+      - I didn't know there was a [charge](property) for [tranferring](service). What is the charge?
+      - What kind of [fees](property) will I pay when I [transfer](service)?
+      - I did a [transfer](service).  What is the extra [fees](property)?
+      - What is the reason for the [fee](property) charge on my [transfer](service)?
+      - What is this [fee](property) for [transferring](service) money?
+      - What is this extra [fee](property) while I was doing a [transfer](service)?
+  - intent: what_verify_top_up
+    examples: |
+      - What is the [verification](property) code for my [top up](service) card?
+      - What is the point of [verifying](property) a [top up](service)?
+      - What is the significance of [verifying](property) the [top-up](service)?
+      - What do I do to [verify](property) a [top-up](service)?
+      - What  is the [verification](property) process for a [top up](service) card?
+      - What's the deal with [verifying](property) the [top-up](service)?
+      - What's up with verifying [top-ups](service)?
+      - What is the [top up](service) code for?
+      - What's a [verification](property) code?
+      - What can I do to [verify](property) my [card](product)?
+      - What is the [verification](property) process for my [card](product)?
+      - What does [top-up](service) [verification](property) do?
+  - intent: what_top_up_by_cash_or_cheque
+    examples: |
+      - What is not [accepted](property) in order for me to [top up](service) my account?
+      - What [types](property) of [top-up](service) methods do you accept?
+      - What [apps](property) can I use to [top up](service) my account?
+      - What is the [procedure](property) for [topping up](service) with a cheque?
+      - What physical locations can I use cash to [top up](service)?
+      - What [form](property) of payments can I use for [topping up](service)?
+      - What's the best [way](property) to use a cheque to [top up](service)?
+      - What is your check-cashing policy?
+  - intent: what_get_disposable_virtual_card
+    examples: |
+      - What do you use [disposable cards](product) on?
+      - What are the [disposable cards](product) for?
+      - What systems do you have in place for my security when using my card for everyday purchases?
+      - What is the function of the [disposable cards](product)?
+      - What are the [disposable cards](product) used for?
+      - What are these [disposable virtual cards](product) all about?
+      - What is the process to create a [disposable virtual card](product)?
+      - What can I do with a [disposable virtual card](product)?
+      - What are [disposable virtual cards](product)?
+      - What is the procedure for depositing a [virtual card](product)
+      - What can you use the [disposable cards](product) for?
+      - What are the uses for [disposable cards](product)?
+      - What are these [disposable cards](product) meant for?
+      - What do the [disposable cards](product) do?
+      - What are the benefits of a [disposable card](product)?
+      - What is the [disposable card](product) for?
+  - intent: what_exchange_charge
+    examples: |
+      - What are the currency [exchange](service) [fees](property)?
+      - What is the current [exchange](service) [fee](property)?
+      - What's the [exchange](service) [fee](property)?
+      - What kind of [costs](property) are involved for [exchanging](service) currency?
+      - What is the [charge](property) for [exchanging](service) currencies?
+      - What's the [cost](property) for [exchanges](service)?
+      - What do you charge for an [exchange](service) [fee](property)?
+      - What is the [fee](property) for accepting money from a foreign country?
+      - What is the [cost](property) for currency [exchanges](service)?
+      - What is the [exchange](service) fee that is charged?
+      - What is the currency [exchange](service) [fee](property)?
+      - What kind of [charges](property) should I expect to [exchange](service) currencies?
+      - What is your currency [exchange](service) [fee](property)?
+      - What fee will be [charged](property) for [exchanges](service)?
+      - What is the rate for [exchange](service) [fees](property)?
+      - What is the [charge](property) for [exchanging](service) currency?
+      - What are the [charges](property) if I [exchange](service) foreign currency?
+      - What's the [fee](property) for [exchange](service) of foreign currencies?
+      - What is the [fee](property) for a foreign currency [exchange](service)?
+      - What exactly is the [exchange](service) [fee](property)?
+      - I need to [exchange](service) some foreign currency. What's the [charge](property) for doing that?
+      - What commission do you take for currency [exchage](service)?
+  - intent: what_top_up_by_card_charge
+    examples: |
+      - What is the [charge](property) for using a [Top up](service) card in the [US](country)?
+      - What is the [fee](property) for [topping up](service) a US card?
+      - What [fees](property) are charged when I [top up](service)
+      - What are the [charges](property) for [topping up](service) US card?
+      - What is the [fee](property) if I use a European bank for a [top up](service)?
+      - What are the [top up](service) [charges](property) for all US cards?
+      - What is the [charge](property) for [topping up](service) a card?
+      - What [fees](property) to you have for [top ups](service)?
+      - What do you [charge](property) to [top up](service) [US](country) cards?
+      - What is the [Top up](service) rate [charge](property) for using a card in the [US](country)?
+      - What are the [top-up](service) [fees](property) for my card?
+      - What [top up](service) charges are there for [US](property) cards?
+      - What do I need to know about [topping up](service)?
+      - What options do I have when [topping up](service) a [US](property) card?
+      - What fees are there for adding money using an international card
+      - What are the [top up](service) [fees](property) for using an [European](country) bank card?
+      - What are the fees for using a European bank card?
+  - intent: what_cash_withdrawal_charge
+    examples: |
+      - I made a cash [withdrawl](service) and there is a [charge](property).  What is this?
+      - I just saw a charge for a cash withdrawal that I made! ATM withdrawals have always been free in the past, so why is there suddenly a charge? What is it going to cost me now?
+      - What's up with the [fee](property) for [getting cash](service)?
+      - What's up with the [extra fee](property) I got?
+      - What's going on? I was just recently charged for an ATM withdrawal. I've never seen this charge before and before it's always been free.
+      - It seems I've suddenly been charged for my recent ATM cash withdrawal. What's up with that? I though withdrawals are free, you never charged me so far!
+      - What was the [extra charge](property) for [withdrawing](service) money?
+      - I have never been charged for making an ATM cash withdrawal before, but I am now being charged a fee to withdraw cash. What happened?
+      - I have a strange transaction on my account which appears to pertain to a cash withdrawal I made outside Nandos in Leeds.  What is that for?  Is it fraud?
+      - What is your [policy](property) on [withdrawing](service) cash from an ATM? There is a fee on my account that wasn't there before I paid for my groceries.
+      - What is the [extra fee](property) I was charged when [using an ATM](service)?
+      - What is the [fee](property) for a cash [withdrawal](service)?
+  - intent: what_card_about_to_expire
+    examples: |
+      - What is the cost and time frame of getting a new card?
+      - What do I do if my card expires soon?
+      - What happens if my card expires?
+      - My card is about to expire. What do I need to do to keep using my card?
+      - What is the procedure for an expired card?
+      - What do I do if my card is about to expire?
+      - What happens after my card expires?
+      - What steps should I take before my card expires?
+      - What to do if my card is about to expire?
+      - The expiration date on my card is very soon, and I need to get a new one.  What are the price and delivery options for my replacement card?
+      - My card expires very soon.  What is the cost and delivery time to get a new one?
+      - What should I do when my card reaches its expiry date?
+      - What will happen after my card expires?
+      - What can I expect at card expiration?
+      - What should I do once my card expires?
+      - What do I do after my card expires?
+      - What do I do about my expired card?
+      - What happens when my card expires?
+      - What is the process when my card is due to expire?
+      - What is the process to get a new card when your old one expires?
+      - What do I do when I get close to the expiration date of my card?
+  - intent: what_apple_pay_or_google_pay
+    examples: |
+      - What currencies does google pay top up accept?
+      - What do I do if my Google pay top up isn't working?
+      - What are the steps needed to top up with Apple Pay?
+      - What services can I use to top up?
+      - What should I do to top up using my Apple Watch?
+      - Google Pay isn't working. What is wrong?
+  - intent: what_country_support
+    examples: |
+      - What [countries](service) are you located in?
+      - What [countries](service) do your accounts send and receive to?
+      - What [countries](service) do you operate in?
+      - What are the [countries](service) that you operate in?
+      - What [countries](service) can I use my account in?
+      - What [countries](service) are you available in?
+      - What [countries](service) do your services support?
+      - I live in Germany. Is that one of the [countries](service) you are in? What other countries are you in?
+      - What are the [countries](service) you have offices in?
+      - What [countries](service) are you issuing cards for?
+      - What [countries](service) can I use your services?
+      - What [countries](service) have access to this service.
+      - What are your supported [countries](service)?
+      - What [countries](service) can I use the card in?
+      - What are the [countries](service) you support.
+      - What [countries](service) do your accounts support?
+      - What [countries](service) are you supporting?
+      - What [countries](service) are getting support?

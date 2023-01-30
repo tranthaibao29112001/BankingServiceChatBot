@@ -1,0 +1,224 @@
+version: "3.1"
+
+stories:
+- story: first word
+  steps:
+  - intent: first_word
+  - action: utter_first_word
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask what 001
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what
+  - slot_was_set:
+      - service
+      - property: null
+  - action: action_answer_what_service
+
+- story: ask what 002
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what
+  - slot_was_set:
+      - product
+      - property: null
+  - action: action_answer_what_product
+
+- story: ask what 003
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what
+  - slot_was_set:
+      - service
+      - property
+      - product: null
+  - action: action_answer_what_service_property
+
+- story: ask what 004
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what
+  - slot_was_set:
+      - product
+      - property
+      - service: null
+  - action: action_answer_what_product_property
+
+- story: ask what 005
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_what
+  - slot_was_set:
+      - service
+      - product
+      - property
+  - action: action_answer_what_service_product_property
+
+
+- story: ask what to how 01
+  steps:
+  - intent: ask_what
+  - slot_was_set:
+      - service
+      - product: null
+      - property: null
+  - action: action_answer_what_service
+  - intent: ask_how
+  - slot_was_set:
+      - operation
+  - action: action_answer_how_service_operation
+
+- story: ask what to how 02
+  steps:
+  - intent: ask_what
+  - slot_was_set:
+      - product
+      - property: null
+      - service: null
+  - action: action_answer_what_product
+  - intent: ask_how
+  - slot_was_set:
+      - operation
+  - action: action_answer_how_product_operation
+
+- story: ask what to what 01
+  steps:
+  - intent: ask_what
+  - slot_was_set:
+      - service
+      - product: null
+      - property: null
+  - action: action_answer_what_service
+  - intent: ask_what
+  - slot_was_set:
+      - property
+  - action: action_answer_what_service_property
+
+- story: ask what to what 02
+  steps:
+  - intent: ask_what
+  - slot_was_set:
+      - product
+      - product: null
+      - property: null
+  - action: action_answer_what_product
+  - intent: ask_what
+  - slot_was_set:
+      - property
+  - action: action_answer_what_product_property
+
+
+- story: ask how to what 01
+  steps:
+  - intent: ask_how
+  - slot_was_set:
+      - service
+      - product: null
+      - property: null
+  - action: action_answer_how_service
+  - intent: ask_what
+  - slot_was_set:
+      - property
+  - action: action_answer_what_service_property
+
+- story: ask balance
+  steps:
+  - intent: account_balance
+  - action: utter_get_card_id
+  - intent: give_card_id
+  - action: utter_show_balance
+
+- story: ask how 001
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_how
+  - slot_was_set:
+      - service
+      - operation: null
+  - action: action_answer_how_service
+
+- story: ask how 002
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_how
+  - slot_was_set:
+      - service
+      - operation
+      - product: null
+  - action: action_answer_how_service_operation
+
+- story: ask how 003
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_how
+  - slot_was_set:
+      - product
+      - operation
+      - service: null
+  - action: action_answer_how_product_operation
+
+- story: ask how 004
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_how
+  - slot_was_set:
+      - product
+      - operation: null
+  - action: action_answer_how_product
+
+- story: choose context
+  steps:
+  - intent: choose_context
+  - slot_was_set:
+      - context
+      - product: null
+      - operation: null
+      - service: null
+      - property: null
+  - action: action_context
+
+- story: i dont understand
+  steps:
+  - intent: choose_context
+  - slot_was_set:
+      - product: null
+      - operation: null
+      - service: null
+      - property: null
+  - action: utter_dont_know

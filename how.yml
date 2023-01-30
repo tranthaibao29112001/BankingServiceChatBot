@@ -1,0 +1,649 @@
+version: '3.0'
+nlu:
+  - intent: how_card_arrival
+    examples: |
+      - How do I know if I will get my [card](product), or if it is lost?
+      - How do I know when my new [card](product) is going to arrive?
+      - How do I [track](operation) the [card](product) you sent me?
+      - How can I [check](operation) on the status of my new [card](product)?
+      - How can I periodically check the [delivery](service) of the [card](product) you sent?
+      - How can I [check](operation) on the [delivery](service) status of my [card](product)?
+      - How can I see the progress of [delivery](service) of the [card](product) that was sent?
+      - How can I [track](operation) my [card](product)'s [delivery](service)?
+      - How do I [track](operation) the [card](product) you sent to me?
+  - intent: how_card_linking
+    examples: |
+      - I was able to find my card. How to I go about putting it into my [app](product)?
+      - I found my card. How can I put it into my [app](product)?
+      - How do I make my card [show up](operation) in the [app](product)?
+      - How do I [add](operation) an existing card to the [app](product)?
+      - How do I [link](operation) one of your card that I already have?
+      - How can I make my card [show up](operation) in the [app](product)?
+      - How do I [link](operation) an existing [card](product)?
+      - How do I [link](operation) a new card in the [app](product)?
+      - I want my card I just received to show up in the [app](product). How do I do that?
+      - How do I [add](operation) my new [card](product)?
+      - My card is no longer lost. How do I enter it back into the [app](product)?
+      - How do I [reactivate](operation) a [card](product) I thought I lost?
+      - How do I add a new [card](product)?
+      - How do i go about [linking](operation) a new [card](product)?
+      - I received my card. How do I link it to the [app](product)?
+      - How do I [add](operation) the card I just received to show up in the [app](product)?
+      - How do I [add](operation) a card on to the [app](product)?
+      - How do I get my card on the [app](product)?
+      - How do I [link](operation) my new [card](product)?
+      - How can I [link](operation) the new [card](product)?
+      - How do I add my new card to the [app](product)?
+      - How do I [link](operation) a new [card](product) to an existing one?
+      - How do I [link](operation) a new payment [card](product)?
+      - How do I [link](operation) my [card](product) in the app.
+      - How do I get my card [into](operation) the [app](product)?
+      - How do I [reactivate](operation) my [card](product)?
+      - How do I [link](operation) the new [card](product) that I just got from you guys?
+      - How can I [add](operation) a new [card](product)?
+      - How do I make my card [appear](operation) on the [app](product)?
+      - How do I [link](operation) the new [card](product)?
+      - How do I [add](operation) my card to the [app](product) once I get it?
+      - How do I [activate](operation) and link my new [card](product)?
+      - How do I see my card in the [app](product)?
+  - intent: how_exchange_rate
+    examples: |
+      - How are [exchange rates](service) [calculated](operation) at this bank?
+      - How do you [determine](operation) your [exchange rates](service)?
+      - How do the foreign [exchange rates](service) [work](operation)?
+      - How do you [decide](operation) what the [exchange rates](service) are?
+      - How do you [calculate](operation) [exchange rates](service)?
+      - How do you [find](operation) the [exchange rate](service)?
+      - How are [exchange rates](service) determined?
+      - How do you [determine](operation) [exchange rates](service)?
+      - How are your [exchange rates](service) [calculated](operation)?
+      - How can I find your [exchange rates](service)?
+      - How does the [exchange rate](service) [work](operation)?
+      - How are foreign [exchange rates](service) [determined](operation)?
+      - How will I know what the [exchange rate](service) is?
+      - How do your [exchange rates](service) factor in?
+      - How do you do [exchanges](service)?
+      - How do you come up with your [exchange rate](service)
+      - How are the [exchange rates](service) [determined](operation)?
+      - How do you [decide](operation) what your [exchange rates](service) are?
+      - How do I know how much money I will have when I travel abroad?
+      - How do you do currency [exchanges](service)?
+      - How did you guys [get](operation) your [exchange rate](service)?
+      - How can I tell what foreign [exchange rate](service) I will get?
+      - How does the [exchange rate](service) [work](operation) on this app?
+      - How do you [determine](operation) the [exchange rate](service)?
+  - intent: how_automatic_top_up
+    examples: |
+      - How do I access the option to top up?
+      - How do i [set up](operation) [auto top-up](service)?
+      - How do I [start](operation) [auto top up](service)?
+      - I would like to top up my account [automatically](service). How do I do that?
+      - How can I Use thereto-top option?
+      - How can I add money [automatically](service)?
+      - How will I know when I can [use](operation) the [auto top-up](service) feature?
+      - Can I [auto-top up](service)?  How do I do it?
+      - How do I get refills to my card when I'm traveling?
+      - How do I [auto top-up](service)?
+      - How do I [top-up automatically](service)?
+      - How do i access the [auto top-up](service) option?
+      - How do I activate [auto top-up](service) when traveling?
+      - How can I [setup](operation) [automatic top-up](service)?
+      - How do I top-up while traveling?
+  - intent: how_card_not_working
+    examples: |
+      - How do I [fix](operation) a broken [card](product)?
+      - How come my card doesn't work anymore?
+      - How do I [check](operation) [security settings](property) on my [card](product)?
+      - How do I [fix](operation) my [card](product) if it is broken?
+      - How do I [re-order](operation) a damaged [card](product)?
+      - How do I get my [card](product) to work?
+      - How do I [check](operation) [security settings](property) using the [app](product)?
+      - How can I get my [card](product) to work?
+      - My card stopped working. How do I check if there is a freeze on it?
+      - How can it be that my Card is not functioning anymore?
+  - intent: how_exchange_via_app
+    examples: |
+      - How can I [change](operation) to another [currency](product)?
+      - How can I [change](operation) [USD](currency_1) to [GBP](currency_2)?
+      - How can I [exchange](operation) [AUD](currency_1) for [GBP](currency_2)?
+      - I would like to [exchange](operation) [currencies](product) on the [app](context_where). How do I do this?
+      - How can I [change](operation) [currency](product) type?
+      - How do I [change](operation) my [currency](product) to another?
+      - How do I [exchange](operation) [currencies](product) using the [app](context_where)?
+      - How do I [exchange](operation) [currencies](product) using this [app](context_where)?
+      - How do I [change](operation) my [AUD](currency_1) into [GBP](currency_2)?
+      - How can I [convert](operation) [currencies](product)?
+      - How do I [change](operation) to a different [currency](product)?
+      - How to [exchange](operation) my [currency](product)
+      - How do I use the [app](context_where) to [exchange](operation) [currencies](product)?
+      - How do I [exchange](operation) [USD](currency_1) to [GBP](currency_2)?
+      - How do I [exchange](operation) [AUD](currency_1) for [GBP](currency_2)?
+      - How can I [exchange](operation) [currencies](product) using your [app](context)?
+      - How do I go about [exchanging](operation) [currencies](product) with this [app](context)?
+      - How do I [exchange](operation) [currencies](product) with this
+      - I'm having difficulties [changing](operation) [AUD](currency_1) for [GBP](currency_2). How do I do this?
+      - How do you [exchange](operation) [currencies](product)?
+      - How can I [exchange](operation) [currencies](product) with this [app](context_where)?
+      - How can I [exchange](operation) [GBP](currency_1) for [AUD](currency_2)?
+      - How do I [switch](operation) to a different [currency](product)?
+      - How to I [switch](operation) my money for the money used in another country?
+      - How do I make a [currency](product) exchange?
+      - I accidentally chose to [exchange](operation) [GBP](currency_1), but I need to pick [AUD](currency_2. How can I change it?
+      - How can I [exchange](operation) [USD](currency_1) and [GBP](currency_2) in the [app](context_where)?
+      - How can I [exchange](operation) [currencies](product) in the [app](context_where)?
+      - How can I [change](operation) the [currency](product) I'm exchanging from [AUD](currency_1) to [GBP](currency_2)?
+      - How can I [trade](operation) [currencies](product) with this [app](context_where)?
+      - How do I [change](operation) to [AUD](currency_1) from [GBP](currency_2)?
+      - How do I start an [exchange](operation) between [GBP](currency_1) and [AUD](currency_2)?
+  - intent: how_lost_or_stolen_card
+    examples: |
+      - How do I [replace](operation) a stolen [card](product)?
+      - How can I report that my [card](product) was [stolen](operation)? I made a police report first.
+      - My wallet was stolen, along with my [cards](product). How do I put a [freeze](operation) on my cards and order a new one?
+      - How do I [deactivate](operation) a stolen [card](product)?
+      - I think my wallet fell out on the Tube today! I realized as soon as I got to my desk. How do I [cut off](operation) the [card](product)?
+      - How do I report my [card](product) as lost or [stolen](operation)?
+  - intent: how_pin_blocked
+    examples: |
+      - I entered a wrong PIN too many times. How can I fix this?
+      - How can I [unblock](operation) my [PIN](product)?
+      - How do I make my [PIN](product) [work again](operation)?
+      - How can I get my [PIN](product) [unblocked](operation)?
+      - How do I take a [block off](operation) my [card](product)?
+      - How do I go about [unlocking](operation) a [pin](product)?
+      - I enetered the wrong information, I need my [account](product) [unblocked](operation) How do I do that?
+      - How can I [reset](operation) my darned [PIN](product) number?
+      - How do I [unblock](operation) my [PIN](product)?
+      - How do I get [unblocked](operation)?
+      - How come I got [blocked](operation) for entering wrong [pins](product)?
+      - How to [unblock](operation) my [PIN](product)?
+      - How do I [unblock](operation) my [card](product)?
+      - Too many times I entered the incorrect [PIN](product).  How can I get my account [unblocked](operation)?
+      - How do I [unlock](operation) my [account](product) after typing in the wrong PIN too many times?
+  - intent: how_contactless_not_working
+    examples: |
+      - How come when I tried to pay [contactless](service) at the bus it didnt work?
+      - I'm confused. My [contactless](service) is suddenly not working anywhere that I try to use it. How do I fix it?
+      - I've tried using my [contactless](service) in several locations today and it's not working anywhere. It seemed fine before. How do I get it to work again?
+      - How do I troubleshoot my [contactless](service)?
+      - How can I fix my [contactless](service)?
+      - How can i get new [card](product)?
+      - My [contactless](service) stopped working today no matter where I try to use it. How do I get it to start working again?
+      - How do I troubleshoot when [contactless](service) doesn't work?
+      - How can I fix my card if the [contactless](service) function didn't work this morning?
+  - intent: how_cancel_transfer
+    examples: |
+      - I made a mistake this morning when I did a [transfer](service). How do I [reverse](operation) it?
+      - How do I [revert](operation) a [transaction](service)?
+      - How do i [cancel](operation) a [charge](service)?
+      - How do I [cancel](operation) a [transaction](service)?
+      - How to [cancel](operation) a [transaction](service)
+      - How do I [cancel](operation) a [transfer](service)?
+      - How can I [cancel](operation) my [transfer](service)?
+      - How can I [cancel](operation) a [transfer](service) I made
+      - How do I [fix](operation) a [transaction](service) to the wrong account?
+      - How do I go about [cancelling](operation) a [transaction](service)?
+      - I have arranged a transfer, but no longer need to send it. How do I [stop](operation) the [transfer](service)?
+      - How can I revert a [transaction](service) from this morning?
+      - How do I cancel a recent [transfer](service)?
+      - I made the incorrect payment for my rent yesterday and this needs to be fixed by no later than tomorrow. How can you help?
+      - How can I [cancel](operation) a [transaction](service) to a wrong account?
+      - How can I [cancel](operation) this [transaction](service)?
+      - I wanted to transfer money to another account, but now I don't have to so I'd like to cancel said transfer. How can I do that?
+  - intent: how_card_payment_fee_charged
+    examples: |
+      - How did the extra charge on my card come in effect?
+      - How come I was charged an extra fee when paying with the card?
+      - How was I charged extra when I used my card to pay?
+      - How do I see what fees I am supposed to be charged on my account? I've noticed fees on some transactions, but not on others. This is very confusing and I cannot find a pattern to what I am being charged?
+      - How can I check how much free spending I have left? I have some big purchases coming up and want to know where I can look for any info.
+      - How can I tell if there will be a fee added to my payment or not?
+      - How do I know which payments I make will have additional fees? Where can I find this information online?
+  - intent: how_supported_cards_and_currencies
+    examples: |
+      - How do I use American express to top up my account?
+      - How can I top up my card with another card?
+      - How can I fund another account with my American Express?
+      - How can I top up my account and which currency can I use?
+      - How can I get funds into my account from my American Express?
+      - I want to use a payment card to top up my account. How can I do this?
+      - How can I pay for top-ups?
+      - How can I use my American Express to add money into my account?
+  - intent: how_getting_virtual_card
+    examples: |
+      - How can I [sign up](operation) for a [virtual card](product)?
+      - How do I [get](operation) to the [virtual cards](product)?
+      - How to [receive](operation) [virtual card](product)?
+      - How to [order](operation) a [virtual card](product)
+      - How do I go about [getting](operation) hold of a [virtual card](product)?
+      - How can I go about [ordering](operation) a [virtual card](product)?
+      - How can I [obtain](operation) a [virtual card](product)?
+      - I'm interested in [getting](operation) a [virtual card](product).  How do I get one?
+      - How can I [receive](operation) a [virtual card](product)?
+      - How do I [get](operation) my [virtual card](product)?
+      - How come I did not [get](operation) a [virtual card](product) yet?
+      - How do I [get](operation) a [virtual card](product) on my device?
+      - How do I [access](operation) the [virtual card](product)?
+      - How come I didn't [get](operation) a [virtual card](product) yet?
+      - How do I go about [getting](operation) a [virtual card](product)?
+      - How can I [locate](operation) the [virtual card](product)?
+      - How to [access](operation) my [virtual card](product)
+      - I have lost my card, but need to place an online order! How do I [get](operation) a [virtual card](product) instantly?
+      - How do I [receive](operation) a [virtual card](product)?
+      - I heard you have [virtual card](product). How do I [get](operation) one?
+  - intent: how_edit_personal_details
+    examples: |
+      - How can I [change](operation) my [address](product)?
+      - How do I [edit](operation) the personal [details](product) on my account?
+      - How can I [change](operation) my [name](product) because I just got married?
+      - I just moved. How do I [give](operation) you my new [address](product)?
+      - How can I [change](operation) my [name](product) in my profile?
+      - How do I go about [changing](operation) my [address](product)?
+      - How do I [change](operation) my account [details](product)?
+      - How do I [change](operation) the [details](product) in my account?
+      - How do I [edit](operation) my [details](product)?
+      - How would I [change](operation) my [details](product)?
+      - How can I [change](operation) my [information](product)?
+      - How do I [change](operation) my [details](product)?
+      - How to [edit](operation) personal [details](product)?
+      - How can I [edit](operation) my personal [details](product) in the app?
+      - How do I [change](operation) my [address](product) ?
+      - How to [modify](operation) my [details](product).
+      - I moved so I need to [change](operation) my [address](product). How do I do that?
+      - How do I [change](operation) my [name](product) after marriage
+      - How do I [update](operation) my [address](product)?
+      - How do I [modify](operation) my [details](product)?
+      - How do I [input](operation) a new [address](product)?
+      - How would I be able to make [changes](operation) to my personal [details](product)?
+      - How do I [edit](operation) my personal [details](product)?
+      - How can I [update](operation) my personal [information]](product) after moving?
+      - How can I [change](operation) to my married [name](product)?
+      - How do I [modify](operation) my account [details](product)?
+      - How do I [change](operation) my [name](product)?
+      - How can I [change](operation) my account [details](product)?
+      - How do I [change](operation) my last [name](product)?
+      - How can I [update]](operation) my [details](product) since I moved?
+  - intent: how_get_physical_card
+    examples: |
+      - my pin hasn't arrived in the post! How do I cancel it or get a new one?
+      - How will I [know](operation) my [pin](product) number?
+      - How do I [find](operation) my [PIN](product)?
+      - How will I [receive](operation) my [PIN](product)?
+      - How do I find my [PIN](product) number?
+      - How do I [set up](operation) my card [PIN](product)?
+      - How do I [request](operation) the [PIN](product)?
+      - How is the [PIN](product) [delivered](operation)?
+      - How do I [set](operation) my physical card [PIN](product)?
+      - How do I [locate](operation) my [PIN](product) now that I have my card?
+      - How do I [find](operation) the [PIN](product)?
+      - How do I [know](operation) what my [PIN](product) is?
+      - How do I [get](operation) my card [PIN](product)?
+      - How do I [get](operation) a [PIN](product)?
+      - How is my [PIN](product) sent?
+      - How do I get started when I get my card?
+      - How do I [find](operation) my new [pin](product)?
+  - intent: how_topping_up_by_card
+    examples: |
+      - How can my friends [top up](service) my account?
+      - How do I [top up](service) by [card](product)?
+      - How do I add money to my card?
+      - How can I [transfer](service) money using my credit [card](product)?
+      - How do I [transfer](service) funds directly from my credit [card](product)?
+      - How do I [top up](service) on my [card](product)?
+      - How do I use a [card](product) to [top up](service)?
+      - How do I [top up](service) by [card](product)?
+      - How do i set up my credit [card](product) to send [transfers](service)?
+      - Something is wrong with my [top up](service) and I can't see it. How do I find it?
+      - How do I [top up](service) using my [card](product)?
+      - How do I go about [transferring](service) money using my credit [card](product)?
+      - How does someone else [top up](service) my account
+      - I have a new [card](product). How do i [top up](service)?
+      - How can I use my credit [card](product) to [transfer](service) money?
+      - How do I use my [card](product) to [top up](service)?
+  - intent: how_compromised_card
+    examples: |
+      - How do I [stop fraud](operation) to my [account](product)?
+      - How do I [stop fraud](operation) to my [card](product)?
+      - How can I tell if someone else is using my [card](product)?
+      - How do I [report fraud](operation) on my [card](product)?
+      - How do I [report possible fraudulent](operation) activity on my [account](product)?
+      - How do I order a [replacement](operation) for stolen [card](product)?
+  - intent: how_direct_debit_payment_not_recognised
+    examples: |
+      - This debit is not my transcation. How do I get my money out back?
+      - How can I get my money back for a payment i didnt make
+      - There is a [direct debit transaction](service) on my statement that I think is not mine. How do I [remove](operation)?
+      - How can I [dispute](operation) a [direct debit transaction](service)?
+      - How can I [dispute](operation) a [debit transaction](service)?
+      - I see a [direct debit](service) that isn't mine? How can I get my money back?
+      - How do I [dispute](operation) a [direct debit](service) on my account?
+      - How do I [dispute](operation) a [debit](service) that I didn't make?
+      - How do I [dispute](operation) a [direct debit transaction](service)?
+      - How do I [dispute](operation) a [direct debit](service) that I didn't do?
+      - How can I [dispute](operation) a [direct debit](service) charge on my account?
+      - How do I get a [refund](operation) for an unauthorized [direct debit](service) payment?
+  - intent: how_passcode_forgotten
+    examples: |
+      - How do I [reset](operation) my [password](product)?
+      - How can I [reset](operation) the [password](product) if I need to do that?
+      - How do I [change](operation) my [password](product)?
+      - How can I go about [resetting](operation) my [password](product)?
+      - How can I [change](operation) my [password](product)?
+      - How do I [reset](operation) my [password](product)?
+      - How can I [reset](operation) my [password](product)?
+      - How do I get the [password](product) [reset](operation)?
+      - How can i [reset](operation) my [password](product) ?
+  - intent: how_lost_or_stolen_phone
+    examples: |
+      - My phone is at the hotel.  How can I use the app?
+      - My phone has been stolen.  How can I make sure no one uses my account from it?
+      - How do I protect my phone from someone using it after I lost it.
+      - How can I access my account when I have lost my phone?
+      - How do I use my card if I lost my phone?
+      - How can I stop someone from using my card after I lost it yesterday.
+  - intent: how_request_refund
+    examples: |
+      - Hello. How do i go about getting a refund of an item i bought ? I want to cancel the payment since i have not received the item yet.
+      - I've changed my mind on an item.  How do I get a [refund](service)?
+      - I decided I no long want something that I ordered, and want a [refund](service). How do I go about doing that?
+      - How do I get a [refund](service) for something I bought?
+      - How can I get a [refund](service) for an item I purchased but has not yet arrived?
+      - I didn't enjoy my tutor session and want a [refund](service) back. How do I go about doing this?
+      - How do I get my money back for something I bought?
+      - How do I [reverse](operation) a [transaction](service) on my account?
+      - How do I begin the process of a [refund](service)?
+      - I did not get the item I ordered.  How should I go about this?  Should I just cancel my order or my payment?  Please help me.
+      - I want a [refund](service), but I haven't received the item yet. Can I cancel it and get my funds back? How do I do that.
+      - How do I go about getting a [refund](service)?
+      - How can i get a refund for something i just [refund](service)?
+      - How do I request a [refund](service)?
+      - How do I get my [refund](service) back?
+      - How can I get a [refund](service) for a purchase?
+      - How do I get a [refund](service) for an item I bought?
+      - How can I get my money back on an order. I haven't gotten the item yet, so I want to cancel the order. How?
+      - I am unhappy with an item I bought. How do I get a [refund](service)?
+      - How can I go about getting a [refund](service)?
+      - How do I cancel a purchase?
+      - How do I return something for a full [refund](service)?
+      - How does on apply fora [refund](service) on an item he ordered? I ordere an item and have not received it yet so i want to cancel it and get a refund
+      - How do I receive a [refund](service) for my item?
+  - intent: how_declined_transfer
+    examples: |
+      - How do I make my [transfer](service) go through
+      - How do I make sure my [transfer](service) isn't goin to an unsupported merchant?
+      - How can I check for an unsupported merchant for my [transfer](service) request?
+      - How come my [transfer](service) got [declined](operation)
+      - How do I contact customer support about my [declined](operation) [transfer](service)?
+      - Help me. My [transfer](service) was [declined](operation). How could this happen?
+      - How can I find a way to [transfer](service) money without it being [rejected](operation)?
+  - intent: how_terminate_account
+    examples: |
+      - How do I [deactivate](operation) my [account](product)?
+      - How do I [discontinue](operation) my [account](product)?
+      - How do I [shut down](operation) my [account](product) and get out of this company?
+      - How do I [close](operation) my [account](product)?
+      - How do I [delete](operation) my [account](product) now
+      - How can I [close](operation) my [account](product), I don't want it.
+      - How do I [delete](operation) my [account](product)? I am dissatisfied with the service.
+      - I want to [delete](operation) my [account](product). How do I do this?
+      - How can I [delete](operation) my [account](product)?
+      - How do I [terminate](operation) my [account](product).
+      - How to I close my [account](product)?
+      - How can I close my [account](product)?
+      - How do I close my [account](product), since I'm dissatisfied?
+      - How do I delete an [account](product)?
+  - intent: how_card_swallowed
+    examples: |
+      - Your machine took my card. How do I get it back?
+      - The ATM at Metro bank on High St. Kensington didn't return my card, and the bank is now closed. How do I get back a card swallowed by an ATM?
+      - How can I get my card out of the stupid ATM that ate it?
+      - How do I get my card back quickly from a bank machine that it?
+      - How do I get my card out of the ATM?
+      - How do I get a new card as your machine swallowed mine!
+      - How can I get my card out of the ATM?
+      - How do I get my card back after the ATM swallowed it.
+  - intent: how_transaction_charged_twice
+    examples: |
+      - How can I fix this?  There is a double charge on my account.
+      - How do I query a payment on my card? It looks like I have paid for the same thing twice.
+      - How do I get my money back for a duplicated charge?
+      - I got charged twice with a duplicate card. How do I resolve this?
+      - My account shows I have been charged twice for the same meal. How do I get the second payment voided and returned to me? I do not eat out much and my family is living paycheck to paycheck,  mostly. I cannot afford to spend more money than necessary, as is, so I must see to it that the cost be promptly credited back onto my card.
+      - How come there is a duplicate charge on my card?
+      - In reviewing my statement, I show I have two charges for the same purchase at the same time, which I have not made in duplicate? How do I get this solved?
+      - How do a reverse a duplicated charge?
+  - intent: how_change_pin
+    examples: |
+      - How can I [change](operation) my [PIN](product) without going to the bank?
+      - How can I [change](operation) my [PIN](product) even though I'm out of the country in Austria at the moment?
+      - How do I [change](operation) the [PIN](product)?
+      - How can I [reset](operation) my [PIN](product)?
+      - How can I [set](operation) a new [PIN](product).
+      - How do I [change](operation) my card [PIN](product)?
+      - How do I go about [changing](operation) my [PIN](product)?
+      - How can I [alteration](operation) my [PIN](product)?
+      - How do I [change](operation) my [PIN](product) abroad?
+      - How can I [change](operation) my Rowlock ?
+      - How can I [change](operation) my old [PIN](product) to a new one?
+      - How can I [change](operation) my [PIN](product)?  Help.
+      - How do I [change](operation) my [PIN](product) while traveling?
+  - intent: how_receiving_money
+    examples: |
+      - How can my boss pay me directly to the card?
+      - How can my friend give me money?
+      - How can I [receive money](service)?
+      - How can my friend send money to me?
+      - How do I [transfer](service) funds if I am paid in GBP?
+      - How can I [receive](service) my salary with a different currency?
+      - I would like to [receive](service) my salary in a different currency. How does that work?
+      - How can people [transfer](service) money to me?
+      - How can you [transfer](service) my salary to my correct currency?
+      - I [received](service) my salary in the wrong currency. How do I change this?
+      - How do I [get money](service) from friends?
+      - How do I know what my account is set to, I am paid in GBP?
+      - How can I [receive money](service) from someone?
+      - How can I [receive money](service) from my friend?
+      - How does one send me money?
+      - How do I [receive money](service) from someone?
+      - How can I [receive my salary](service) in another currency?
+      - How would my friend be able to send me money?
+      - How to receive [transfers](service) from my employer when I get paid in GBP?
+      - How can my friend pay me?
+      - How can I configure what currency my salary is in if it's in GBP?
+  - intent: how_transfer_into_account
+    examples: |
+      - I want to [transfer](service) money. How do I do that for my account?
+      - How do I [transfer](service) money into my account?
+      - How can I link my bank to my [top up](service) account?
+      - How can you assist me on topping up on bank [transfer](service) to my account?
+      - I want to op up my account by using bank [transfer](service). How do I go about it?
+      - How simple is it to [transfer](service) money into my account?
+      - How can my account have money [transfer](service) into it?
+      - How do I use bank [transfer](service) to top up my account?
+      - How do I [top up](service)?
+      - How can I move money from an account at another bank to this one?
+      - How can I move money from my account at a different bank to the account I have at this bank.
+      - How does it work when I [transfer](service) money into my account?
+      - How can I add money to my account from another account I have?
+      - How can I [transfer](service) money into my account?
+      - How do I go forth with bank [transfer](service) for top up accounts?
+      - How would I use a bank [transfer](service) for topping my account?
+      - How does a bank [transfer](service) for topping my account work?
+      - How is my money [transfer](service) to the account
+      - How do I top up my account with a bank [transfer](service)?
+      - How can I [transfer](service) some money into a foreign account?
+      - How do I top up my account using [transfer](service)?
+      - How do I go about [transfer](service) money into my bank account?
+      - How do I go forth on [transfer](service) a sum of money from one account to another?
+      - How do I initiated a bank [transfer](service) to top up?
+      - How can I [transfer](service) money between accounts?
+      - How can I deposit money to my account?
+      - How do I [transfer](service) money between two of my accounts?
+      - How do I [transfer](service) cash my into my account?
+      - How can I top up my account by bank [transfer](service)?
+      - How does your app [transfer](service) the money
+      - How do I deposit through bank [transfer](service)?
+      - How can I go about [transfer](service) money to my account?
+      - How can I [transfer](service) money to this account from another bank?
+      - How do I [transfer](service) money from one bank account to another?
+  - intent: how_verify_top_up
+    examples: |
+      - How can I [verify](operation) my [top-up](service) card?
+      - How is [top-up](service) [verified](operation)?
+      - How do i [verify](operation) my [card](product)?
+      - How do I [verify](operation) my [top up](service)?
+      - How do I find the [top-up](service) [verification](operation) code?
+      - How can I [verify](operation) the [top-up](service) card?
+      - How do I find the code needed in order to [verify](operation) my [top-up](service) card?
+      - How do i find my [top-up](service) card's [verification](operation) code?
+      - How do I [verify](operation) the [top-up](service)?
+      - How to [verify](operation) [top up](service) card?
+      - How do I [verify](operation) the [top-up](service) card?
+      - How do I [verify](operation) the [top up](service)?
+      - How do i [authenticate](operation) a [top-up](service) card?
+      - How do i secure a [top-up](service) card?
+      - How are [top-ups](service) [verified](operation)?
+      - How do I [authenticate](operation) my [top-up](service)?
+      - How can I [verify](operation) my [top up](service)?
+      - How do I go about [verifying](operation) the [top-up](service) card?
+  - intent: how_getting_spare_card
+    examples: |
+      - How can I [create](operation) [another card](product) linked to this account?
+      - How can I [get](operation) [another card](product)?
+      - How do I [get](operation) a [spare card](product)?
+      - How do i [request](operation) [more physical cards](product)?
+      - How do I [obtain](operation) a [second card](product)?
+      - How do I [get](operation) [extra physical cards](product)?
+      - How do I [receive](operation) more [physical cards](product)?
+      - How do I [order](operation) [another card](product)?
+      - How do I [get](operation) [another card](product)?
+      - How do I go about [ordering](operation) [another card](product)?
+      - How do I [get](operation) [extra cards](product)?
+  - intent: how_top_up_by_cash_or_cheque
+    examples: |
+      - How do I [top up](service) with a [cheque](product)?
+      - How can I put more money into my account?
+      - How do I [top up](service) with [cash](product)?
+      - How do I use a [cheque](product) to [top up](service)?
+      - How can I add physical money to my card?
+      - How do I [top up](service) by [cheque](product)?
+      - I want to do a [cash deposit](product) to [top up](service). How do I do this?
+      - How can I [top up](service) with a [cheque](product)?
+      - How do i [top up](service) with a [cheque](product) ?
+      - How do you [top up](service) with a [cheque](product)?
+      - How do I deposit cash?
+      - How do I use a check to [top up](service)?
+      - How do I use [cash](product) to [top up](service) my account?
+      - How do I [top-up](service) my card with a [cheque](product)?
+      - How can I fill up my gas tank using a [check](product)?
+      - How do I add [cash](product) to my account?
+      - How do you [top-up](service) using [cash](product)?
+      - How would I [top up](service) with a [cheque](product)?
+      - How can I [top up](service) my account with a [cheque](product)?
+  - intent: how_order_physical_card
+    examples: |
+      - How do I [get](operation) a real [card](product)?
+      - How do I go about [getting](operation) an actual [card](product)?
+      - How can [receive](operation) a physical [card](product)
+      - How do I [get](operation) my [card](product)?
+      - I really want a physical [card](product). How do I [get](operation) one?
+      - How can I [order](operation) a [card](product)?
+      - How to [order](operation) my [card](product)?
+      - How do I actually [obtain](operation) a [card](product) myself?
+      - How can I [order](operation) my [card](product)?
+      - How do I [order](operation) a [card](product)?
+      - How to [receive](operation) the actual [card](product)
+      - How do I [order](operation) my [card](product)?
+      - How do I [receive](operation) a [card](product)?
+      - How do I go about [ordering](operation) a [card](product)?
+      - How do i [receive](operation) a physical [card](product)?
+      - I still don't have a [card](product). How do I [get](operation) one?
+      - I'm interested in [getting](operation) a [card](product). How does one go about doing that?
+      - How would I go about [getting](operation) a physical [card](product) to use in stores?
+      - I would like to have a physical [card](product) to carry around and use. How can I [get](operation) one?
+  - intent: how_get_disposable_virtual_card
+    examples: |
+      - How do I [get](operation) a [disposable virtual card](product) as well?
+      - How can I [get](operation) [disposable virtual cards](product)?
+      - How do I [request](operation) a [disposable virtual card](product)?
+      - How can I [create](operation) a [disposable virtual card](product)?
+      - How does a [disposable virtual card](product) work?
+      - How do I [create](operation) a [disposable virtual card](product)?
+      - How can I go about [getting](operation) a [disposable virtual card](product)?
+      - How can I [get](operation) a [disposable virtual card](product)?
+      - How can [disposable cards](product) be used?
+      - How would I [use](operation) a [disposable card](product)?
+      - How do I [order](operation) a [disposable virtual card](product)?
+      - How do I [use](operation) [disposable cards](product)?
+      - How can I [get](operation) a [virtual card](product) for a one-time transaction?
+      - How do I [receive](operation) a [disposable virtual card](product)?
+      - How do I [use](operation) the [disposable cards](product)?
+      - How do I know if i [need](operation) a [disposable card](product)?
+      - How can I [obtain](operation) a [disposable virtual card](product)?
+      - How to a go about [ordering](operation) a [disposable virtual card](product)?
+  - intent: how_activate_my_card
+    examples: |
+      - How do I [verify](operation) my new [card](product)?
+      - How do i [activate](operation) my [card](product)
+      - I want to use my [card](product). How do I [activate](operation) it?
+      - How can I [activate](operation) my new [card](product)? I didn't recieve any information with it about how to do so.
+      - How do I [activate](operation) my new [card](product) I just got?
+      - How do I get my [card](product) [active](operation)?
+      - How can my new [card](product) be [activated](operation)?
+      - How do I [turn on](operation) my new [card](product)?
+      - How do I [activate](operation) my [card](product), so that I can start using it?
+      - How do I [activate](operation) my [card](product) to start using it?
+      - How can I [activate](operation) my new [card](product)?
+      - How can I [activate](operation) the new [card](product) i got?
+      - How do I [activate](operation) a [card](product)?
+      - How do I [activate](operation) my [card](product) so I can start using it?
+      - My new [card](product) came in.  How do I [activate](operation)?
+      - How do I [active](operation) this [card](product)?
+      - How can i make my [card](product) [active](operation)?
+      - How can I [switch](operation) on my new [card](product)?
+      - How can I make my [card](product) ready to use?
+      - I have a new [card](product). How do I [activate](operation) it?
+      - How do I [activate](operation) my new [card](product)
+      - I just got my new [card](product).  How can I [activate](operation) it?
+      - How can my new [card](product) be renewed?
+      - How do I [activate](operation) my [card](product) that just arrived?
+  - intent: how_card_about_to_expire
+    examples: |
+      - My card expires next week. How do I get a new one?
+      - My card is about to expire.  How do I get a new [card](product)?
+      - How can I [replace](operation) an expired [card](product)?
+      - How do I [get](operation) a new [card](product) sent to China?
+      - How do I know when my [card](product) will expire?
+      - How do I [order](operation) a new [card](product) when my old one is ready to expire?
+      - How do I [replace](operation) a [card](product) that's going to expire?
+      - How do I [order](operation) a new [card](product)? The current one is about to expire.
+      - My card is about to expire.  How do I order another?
+      - My card is expiring soon, How do I order a new [card](product)?
+      - How do I [replace](operation) my [card](product) before it expires next month?
+      - How do I [replace](operation) my [card](product) before it expires?
+      - How can I get a [card](product) sent to China?
+      - How do I [order](operation) a new [card](product) if my current one is about to expire?
+      - How do I go about [ordering](operation) a new bank [card](product)?
+      - How do I [replace](operation) my [card](product)?
+      - How do I [get](operation) a new [card](product) when my old one expires?
+      - How do I [get](operation) a new expiration date?
+  - intent: how_verify_my_identity
+    examples: |
+      - How can I prove I am me?
+      - I need to [verify](operation) my [identity](service). How do I do that?
+      - How do I [verify](operation) my [identity](service)?
+      - How do I [verify](operation) my [identity](service) online
+      - How and where can I find the [identity](service) [checks](operation)?
+      - How can I [verify](operation) my [identity](service)?
+      - How do I perform [identity](service) [checks](operation)?
+      - How do I go through the [identity](service) [checks]( operation)?
+      - How can I prove who I am?
+      - How do I [verify](operation) my [identity](service)?
+      - How do I fill out the [identity](service) [check](operation)?
+      - How do I [validate](operation) my [identity](service).
+      - How do i [change](opeartion) my [identity](service)?
+      - How can you assist on [verify](operation) my [identity](service)?
+      - How do I go about [verify](operation) my [identity](service)?
+      - How do I complete the [identity](service) [check](operation)?
+      - How do you [check](operation) my [identity](service)?
+
