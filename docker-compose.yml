@@ -16,7 +16,7 @@ services:
     volumes:
     - ./actions:/app/actions
     - ./data:/app/data
-    command: bash -c "rm -rf models/* && rasa run --enable-api --cors \"*\" --debug"
+    command: bash -c "rm -rf models/* &&  rasa run -m models --enable-api --cors \"*\" --debug"
     ports:
     - '5006:5005'
     public: true
@@ -31,7 +31,7 @@ services:
     volumes:
     - ./actions:/app/actions
     - ./utils:/app/utils
-    command: ["rasa", "run", "actions"]
+    command: bash -c "python -m rasa_sdk.endpoint --actions actions"
     ports:
     - '5055:5055'
     networks:
