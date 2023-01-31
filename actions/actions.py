@@ -17,6 +17,7 @@ import json
 
 save_last_list_result = []
 
+connection_str = "http://tranthaibao29112001.pythonanywhere.com"
 
 class ActionHelloWorld(Action):
 
@@ -39,7 +40,7 @@ class ActionWhatService(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/what_knowledge?service=" + tracker.get_slot("service")
+        url = connection_str + "/what_knowledge?service=" + tracker.get_slot("service")
 
         response = requests.get(url)
 
@@ -74,7 +75,7 @@ class ActionWhatServiceProperty(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/what_knowledge?service=" + tracker.get_slot("service") \
+        url = connection_str + "/what_knowledge?service=" + tracker.get_slot("service") \
               + "&property=" + tracker.get_slot("property")
 
         response = requests.get(url)
@@ -110,7 +111,7 @@ class ActionWhatProductProperty(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/what_knowledge?product=" + tracker.get_slot("product") \
+        url = connection_str + "/what_knowledge?product=" + tracker.get_slot("product") \
               + "&property=" + tracker.get_slot("property")
 
         response = requests.get(url)
@@ -146,7 +147,7 @@ class ActionWhatProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/what_knowledge?product=" + tracker.get_slot("product")
+        url = connection_str + "/what_knowledge?product=" + tracker.get_slot("product")
 
         response = requests.get(url)
 
@@ -179,7 +180,7 @@ class ActionWhatProductServiceProperty(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/what_knowledge?service=" + tracker.get_slot("service") \
+        url = connection_str + "/what_knowledge?service=" + tracker.get_slot("service") \
               + "&product=" + tracker.get_slot("product") \
               + "&property=" + tracker.get_slot("property")
 
@@ -214,7 +215,7 @@ class ActionHowService(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/how_knowledge?service=" + tracker.get_slot("service")
+        url = connection_str + "/how_knowledge?service=" + tracker.get_slot("service")
         response = requests.get(url)
 
         data = response.json()
@@ -251,7 +252,7 @@ class ActionHowProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/how_knowledge?product=" + tracker.get_slot("product")
+        url = connection_str + "/how_knowledge?product=" + tracker.get_slot("product")
 
         response = requests.get(url)
 
@@ -289,7 +290,7 @@ class ActionHowServiceOperation(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/how_knowledge?service=" + tracker.get_slot("service") \
+        url = connection_str + "/how_knowledge?service=" + tracker.get_slot("service") \
               + "&operation=" + tracker.get_slot("operation")
         response = requests.get(url)
 
@@ -327,7 +328,7 @@ class ActionHowProductOperation(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        url = "http://127.0.0.1:5000/how_knowledge?product=" + tracker.get_slot("product") \
+        url = connection_str + "/how_knowledge?product=" + tracker.get_slot("product") \
               + "&operation=" + tracker.get_slot("operation")
 
         response = requests.get(url)
